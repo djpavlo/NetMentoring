@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1704.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.DAL", "CatalogService.DAL\CatalogService.DAL.csproj", "{A4165E55-F4D4-476E-B675-77C6125B1928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.BLL", "CatalogService.BLL\CatalogService.BLL.csproj", "{F417EF63-7B74-4738-9015-33AC090F2F5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,14 @@ Global
 		{3E5745F8-AB2D-4893-B82C-045D937C7DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E5745F8-AB2D-4893-B82C-045D937C7DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E5745F8-AB2D-4893-B82C-045D937C7DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4165E55-F4D4-476E-B675-77C6125B1928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4165E55-F4D4-476E-B675-77C6125B1928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4165E55-F4D4-476E-B675-77C6125B1928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4165E55-F4D4-476E-B675-77C6125B1928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F417EF63-7B74-4738-9015-33AC090F2F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F417EF63-7B74-4738-9015-33AC090F2F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F417EF63-7B74-4738-9015-33AC090F2F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F417EF63-7B74-4738-9015-33AC090F2F5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
