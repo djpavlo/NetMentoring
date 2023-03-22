@@ -1,4 +1,3 @@
-using CatalogService.Domain;
 using CatalogService.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 

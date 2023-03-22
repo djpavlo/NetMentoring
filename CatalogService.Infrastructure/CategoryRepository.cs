@@ -1,6 +1,5 @@
-using CatalogService.Domain;
 using CatalogService.Domain.Models;
-using CatalogService.Infrastructure.Interfaces;
+using CatalogService.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace CatalogService.Infrastructure;

@@ -1,7 +1,6 @@
-using CatalogService.Domain;
 using CatalogService.Domain.Models;
 
-namespace CatalogService.Infrastructure.Interfaces;
+namespace CatalogService.Domain.Interfaces;
 
 public interface ICategoryRepository
 {

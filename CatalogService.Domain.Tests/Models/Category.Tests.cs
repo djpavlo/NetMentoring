@@ -1,6 +1,4 @@
-﻿using CatalogService.Domain.Models;
-
-namespace CatalogService.Domain.Tests;
+﻿namespace CatalogService.Domain.Tests.Models;
 
 [TestFixture]
 public class CategoryTests
