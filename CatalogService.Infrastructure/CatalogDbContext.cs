@@ -10,9 +10,4 @@ public class CatalogDbContext : DbContext
 
   public DbSet<Category> Categories { get; set; }
   public DbSet<ProductItem> ProductItems { get; set; }
-
-  // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-  // {
-  //   //optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CatalogServiceDb;");
-  // }
 }

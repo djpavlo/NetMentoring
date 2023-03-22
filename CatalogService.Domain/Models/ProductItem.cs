@@ -29,7 +29,5 @@ public class ProductItem
 
     if (Amount == null)
       throw new ArgumentException("Amount is required");
-
-
   }
 }
