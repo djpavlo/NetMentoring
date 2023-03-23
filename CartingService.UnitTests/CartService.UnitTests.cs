@@ -82,5 +82,19 @@ namespace CartingService.UnitTests
       // Assert
       _cartRepositoryMock.Verify(x => x.RemoveCartItem(cartId, cartItemId), Times.Once);
     }
+
+    [Test]
+    public void AddCartItem_ShouldCallRepositoryMethod_WhenValidParameters()
+    {
+      // Arrange
+      var cartId = 1;
+      var cartItem = new CartItem(1, "Apple", null, 0.5m, 2);
+
+      // Act
+      _cartService.AddCartItem(cartId, cartItem);
+
+      // Assert
+      _cartRepositoryMock.Verify(x => x.AddCartItem(cartId, It.IsAny<DbCartItem>()), Times.Once);
+    }
   }
 }

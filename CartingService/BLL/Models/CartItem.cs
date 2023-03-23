@@ -10,6 +10,9 @@ public class CartItem
 
   public CartItem(int id, string name, CartItemImage? image, decimal price, int quantity)
   {
+    if (string.IsNullOrWhiteSpace(name))
+      throw new ArgumentException("Name must be specified", nameof(name));
+
     Id = id;
     Name = name;
     Image = image;
@@ -36,7 +39,7 @@ public class CartItem
     return this.Id
         * 17
         + this.Name.GetHashCode()
-        + this.Image?.GetHashCode()??0
+        + this.Image?.GetHashCode() ?? 0
         + this.Price.GetHashCode()
         + this.Quantity.GetHashCode();
   }
