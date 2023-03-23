@@ -23,11 +23,13 @@ public class CategoryService : ICategoryService
 
   public async Task AddAsync(Category category)
   {
+    category.Validate();
     await _repository.AddCategoryAsync(category);
   }
 
   public async Task UpdateAsync(Category category)
   {
+    category.Validate();
     await _repository.UpdateCategoryAsync(category);
   }
 

@@ -24,11 +24,13 @@ public class ItemService : IProductItemService
 
   public async Task AddAsync(ProductItem item)
   {
+    item.Validate();
     await _repository.AddItemAsync(item);
   }
 
   public async Task UpdateAsync(ProductItem item)
   {
+    item.Validate();
     await _repository.UpdateItemAsync(item);
   }
 

@@ -1,57 +1,34 @@
 ﻿<Properties StartupConfiguration="{7EF6FA39-2671-4E98-9C9D-86478A5E24C0}|Default">
-  <MonoDevelop.Ide.ItemProperties.CatalogService.Domain.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs" relfile="CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs" line="22" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.CatalogService.Domain.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CatalogService.Infrastructure/CatalogDbContext.cs">
-    <Files>
-      <File FileName="CatalogService.Infrastructure/CatalogDbContext.cs" Line="13" Column="2" />
-      <File FileName="CatalogService.Domain/Models/Category.cs" />
-      <File FileName="CatalogService.Domain.Tests/Usings.cs" />
-      <File FileName="CatalogService.Infrastructure/CategoryRepository.cs" />
-      <File FileName="CatalogService.Infrastructure/Interfaces/ICategoryRepository.cs" />
-      <File FileName="CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs" />
-      <File FileName="CatalogService.Infrastructure/ProductItemRepository.cs" />
-      <File FileName="CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs" />
-      <File FileName="CatalogService.Domain/Models/ProductItem.cs" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NetMentoring" expanded="True">
             <Node name="CatalogService.Domain" expanded="True">
+              <Node name="Interfaces" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
             <Node name="CatalogService.Domain.Tests" expanded="True" />
-            <Node name="CatalogService.Infrastructure" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Interfaces" expanded="True" />
-            </Node>
             <Node name="CatalogService.Infrastructure.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="NetMentoring" expanded="True" selected="True">
-            <Node name="CatalogService.Domain.Tests" expanded="True">
-              <Node name="CatalogService.Domain.Tests" expanded="True">
-                <Node name="CategoryTests" expanded="True" />
-                <Node name="ProductItemTests" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="CatalogService.Infrastructure.Tests" expanded="True">
-              <Node name="CatalogService.Infrastructure.Tests" expanded="True">
-                <Node name="CategoryRepositoryTests" expanded="True" />
-                <Node name="ProductItemRepositoryTests" expanded="True" />
-              </Node>
-            </Node>
+          <Node name="NetMentoring" expanded="True">
+            <Node name="CatalogService.Domain.Tests" expanded="True" />
+            <Node name="CatalogService.Infrastructure.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>

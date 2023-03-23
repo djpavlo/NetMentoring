@@ -73,6 +73,19 @@ public class ProductItemServiceTests
   }
 
   [Test]
+  public void AddAsync_WithInvalidProductItem_ThrowsException()
+  {
+    // Arrange
+    var item = new ProductItem { Id = 1, Name = "", Category = new Category(), Price = 9.99m, Amount = 10 };
+
+    // Act
+    Assert.ThrowsAsync<ArgumentException>(async () => await _itemService.AddAsync(item));
+
+    // Assert
+    _mockRepository.Verify(x => x.AddItemAsync(item), Times.Never);
+  }
+
+  [Test]
   public async Task UpdateAsync_UpdatesItem()
   {
     // Arrange

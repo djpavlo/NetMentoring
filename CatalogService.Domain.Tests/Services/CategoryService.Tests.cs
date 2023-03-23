@@ -78,6 +78,19 @@ public class CategoryServiceTests
   }
 
   [Test]
+  public void AddAsync_WithInvalidCategory_ThrowsException()
+  {
+    // Arrange
+    var category = new Category { Name = "" };
+
+    // Act
+    Assert.ThrowsAsync<ArgumentException>(async () => await _service.AddAsync(category));
+
+    // Assert
+    _mockRepository.Verify(x => x.AddCategoryAsync(category), Times.Never);
+  }
+
+  [Test]
   public async Task UpdateAsync_WithValidCategory_ReturnsUpdatedCategory()
   {
     // Arrange
