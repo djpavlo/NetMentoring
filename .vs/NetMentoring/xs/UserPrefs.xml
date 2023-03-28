@@ -1,37 +1,26 @@
-﻿<Properties StartupConfiguration="{7EF6FA39-2671-4E98-9C9D-86478A5E24C0}|Default">
+﻿<Properties StartupConfiguration="{0F16CCAC-39A9-4402-8BBB-2028C14099EB}|http">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs" relfile="CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs" line="22" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.CatalogService.Domain.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NetMentoring" expanded="True">
-            <Node name="CatalogService.Domain" expanded="True">
-              <Node name="Interfaces" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-            </Node>
-            <Node name="CatalogService.Domain.Tests" expanded="True" />
-            <Node name="CatalogService.Infrastructure.Tests" expanded="True" />
+            <Node name="CartingService" selected="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="NetMentoring" expanded="True">
-            <Node name="CatalogService.Domain.Tests" expanded="True" />
-            <Node name="CatalogService.Infrastructure.Tests" expanded="True" />
-          </Node>
+          <Node name="NetMentoring" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebApi FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
