@@ -54,8 +54,8 @@ public class ProductItemRepositoryTests
         Assert.AreEqual(items[i].Name, result[i].Name);
         Assert.AreEqual(items[i].Price, result[i].Price);
         Assert.AreEqual(items[i].Amount, result[i].Amount);
-        Assert.AreEqual(items[i].Category.Id, result[i].Category.Id);
-        Assert.AreEqual(items[i].Category.Name, result[i].Category.Name);
+        Assert.AreEqual(items[i]?.Category?.Id, result[i]?.Category?.Id);
+        Assert.AreEqual(items[i]?.Category?.Name, result[i]?.Category?.Name);
       }
     }
   }
@@ -74,12 +74,12 @@ public class ProductItemRepositoryTests
 
     // Assert
     Assert.IsNotNull(result);
-    Assert.AreEqual(item.Id, result.Id);
-    Assert.AreEqual(item.Name, result.Name);
-    Assert.AreEqual(item.Price, result.Price);
-    Assert.AreEqual(item.Amount, result.Amount);
-    Assert.AreEqual(item.Category.Id, result.Category.Id);
-    Assert.AreEqual(item.Category.Name, result.Category.Name);
+    Assert.AreEqual(item.Id, result?.Id);
+    Assert.AreEqual(item.Name, result?.Name);
+    Assert.AreEqual(item.Price, result?.Price);
+    Assert.AreEqual(item.Amount, result?.Amount);
+    Assert.AreEqual(item.Category.Id, result?.Category?.Id);
+    Assert.AreEqual(item.Category.Name, result?.Category?.Name);
   }
 
   [Test]
@@ -104,12 +104,12 @@ public class ProductItemRepositoryTests
     // Assert
     var result = await _context.ProductItems.FirstOrDefaultAsync(i => i.Id == item.Id);
     Assert.IsNotNull(result);
-    Assert.AreEqual(item.Id, result.Id);
-    Assert.AreEqual(item.Name, result.Name);
-    Assert.AreEqual(item.Price, result.Price);
-    Assert.AreEqual(item.Amount, result.Amount);
-    Assert.AreEqual(item.Category.Id, result.Category.Id);
-    Assert.AreEqual(item.Category.Name, result.Category.Name);
+    Assert.AreEqual(item.Id, result?.Id);
+    Assert.AreEqual(item.Name, result?.Name);
+    Assert.AreEqual(item.Price, result?.Price);
+    Assert.AreEqual(item.Amount, result?.Amount);
+    Assert.AreEqual(item.Category.Id, result?.Category?.Id);
+    Assert.AreEqual(item.Category.Name, result?.Category?.Name);
   }
 
   [Test]
@@ -131,12 +131,12 @@ public class ProductItemRepositoryTests
     // Assert
     var result = await _context.ProductItems.FirstOrDefaultAsync(i => i.Id == item.Id);
     Assert.IsNotNull(result);
-    Assert.AreEqual(item.Id, result.Id);
-    Assert.AreEqual(item.Name, result.Name);
-    Assert.AreEqual(item.Price, result.Price);
-    Assert.AreEqual(item.Amount, result.Amount);
-    Assert.AreEqual(item.Category.Id, result.Category.Id);
-    Assert.AreEqual(item.Category.Name, result.Category.Name);
+    Assert.AreEqual(item.Id, result?.Id);
+    Assert.AreEqual(item.Name, result?.Name);
+    Assert.AreEqual(item.Price, result?.Price);
+    Assert.AreEqual(item.Amount, result?.Amount);
+    Assert.AreEqual(item.Category.Id, result?.Category?.Id);
+    Assert.AreEqual(item.Category.Name, result?.Category?.Name);
   }
 
   [Test]

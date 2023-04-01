@@ -42,6 +42,10 @@ public class CategoryRepository : ICategoryRepository
   public async Task DeleteCategoryAsync(int id)
   {
     var category = await _dbContext.Categories.FindAsync(id);
+    if (category == null)
+    {
+        throw new Exception($"Category with id {id} not found.");
+    }
     _dbContext.Categories.Remove(category);
     await _dbContext.SaveChangesAsync();
   }

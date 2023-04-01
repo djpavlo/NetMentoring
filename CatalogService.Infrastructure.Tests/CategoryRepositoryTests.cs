@@ -58,8 +58,8 @@ public class CategoryRepositoryTests
     var result = await repository.GetCategoryByIdAsync(2);
 
     // Assert
-    Assert.AreEqual(categories[1].Id, result.Id);
-    Assert.AreEqual(categories[1].Name, result.Name);
+    Assert.AreEqual(categories[1].Id, result?.Id);
+    Assert.AreEqual(categories[1].Name, result?.Name);
   }
 
   [Test]
@@ -98,7 +98,7 @@ public class CategoryRepositoryTests
     await repository.UpdateCategoryAsync(category);
 
     // Assert
-    Assert.AreEqual("Category2", context.Categories.Find(1).Name);
+    Assert.AreEqual("Category2", context?.Categories?.Find(1)?.Name);
   }
 
   [Test]

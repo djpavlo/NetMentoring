@@ -28,11 +28,11 @@ public class ProductItemRepository : IProductItemRepository
 
     if (page == null)
     {
-      return await productItems.ToListAsync();      
+      return await productItems.ToListAsync();
     }
 
     // Apply pagination, based on page number and page size
-    var pagedCategories = await productItems.Skip((page??0 - 1) * pageSize).Take(pageSize).ToListAsync();
+    var pagedCategories = await productItems.Skip((page ?? 0 - 1) * pageSize).Take(pageSize).ToListAsync();
     return pagedCategories;
   }
 
@@ -53,6 +53,10 @@ public class ProductItemRepository : IProductItemRepository
   public async Task DeleteItemAsync(int id)
   {
     var item = _dbContext.ProductItems.Find(id);
+    if (item == null)
+    {
+        throw new Exception($"Item with id {id} not found.");
+    }
     _dbContext.ProductItems.Remove(item);
     await _dbContext.SaveChangesAsync();
   }
