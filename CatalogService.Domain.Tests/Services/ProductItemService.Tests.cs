@@ -22,7 +22,7 @@ public class ProductItemServiceTests
               new ProductItem { Id = 1, Name = "Item 1", Category = new Category(), Price = 9.99m, Amount = 10 },
               new ProductItem { Id = 2, Name = "Item 2", Category = new Category(), Price = 19.99m, Amount = 5 }
           };
-    _mockRepository.Setup(x => x.GetItemsAsync()).ReturnsAsync(expectedItems);
+    _mockRepository.Setup(x => x.GetItemsAsync(null, 10)).ReturnsAsync(expectedItems);
 
     // Act
     var actualItems = await _itemService.GetAllAsync();

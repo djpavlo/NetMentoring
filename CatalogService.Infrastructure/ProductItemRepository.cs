@@ -20,21 +20,32 @@ public class ProductItemRepository : IProductItemRepository
         .FirstOrDefaultAsync(i => i.Id == id);
   }
 
-  public async Task<List<ProductItem>> GetItemsAsync()
+  public async Task<List<ProductItem>> GetItemsAsync(
+                                      int? page = null,
+                                      int pageSize = 10)
   {
-    return await _dbContext.ProductItems
-        .Include(i => i.Category)
-        .ToListAsync();
+    var productItems = _dbContext.ProductItems.Include(i => i.Category).AsQueryable();
+
+    if (page == null)
+    {
+      return await productItems.ToListAsync();      
+    }
+
+    // Apply pagination, based on page number and page size
+    var pagedCategories = await productItems.Skip((page??0 - 1) * pageSize).Take(pageSize).ToListAsync();
+    return pagedCategories;
   }
 
   public async Task AddItemAsync(ProductItem item)
   {
+    item.Validate();
     await _dbContext.ProductItems.AddAsync(item);
     await _dbContext.SaveChangesAsync();
   }
 
   public async Task UpdateItemAsync(ProductItem item)
   {
+    item.Validate();
     _dbContext.Entry(item).State = EntityState.Modified;
     await _dbContext.SaveChangesAsync();
   }

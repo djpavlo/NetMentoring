@@ -1,17 +1,18 @@
-﻿<Properties StartupConfiguration="{0F16CCAC-39A9-4402-8BBB-2028C14099EB}|http">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{AC30B7BD-9460-4AD7-9089-87B6A3150929}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Program.cs">
+    <Files>
+      <File FileName="WebApi/Controllers/CatalogController.cs" Line="1" Column="1" />
+      <File FileName="WebApi/Program.cs" Line="10" Column="21" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NetMentoring" expanded="True">
-            <Node name="CartingService" selected="True" />
+            <Node name="WebApi" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+            </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="NetMentoring" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -19,8 +20,9 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.WebApi FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -1,149 +1,176 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CatalogService.Infrastructure;
 using CatalogService.Domain.Models;
 using CatalogService.Domain.Interfaces;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+namespace WebApi.Controllers;
 
-namespace WebApi.Controllers
+[ApiController]
+[Route("[controller]")]
+public class CatalogController : ControllerBase
 {
-  [ApiController]
-  [Route("[controller]")]
-  public class CatalogController : ControllerBase
+  private readonly ILogger<CatalogController> _logger;
+  private readonly ICategoryRepository _categoryRepository;
+
+  private readonly IProductItemRepository _productItemRepository;
+
+  public CatalogController(ILogger<CatalogController> logger,
+                           ICategoryRepository categoryRepository,
+                           IProductItemRepository productItemRepository)
   {
-    private readonly ILogger<CatalogController> _logger;
-    private readonly ICategoryRepository _categoryRepository;
-
-    private readonly IProductItemRepository _productItemRepository;
-
-    public CatalogController(ILogger<CatalogController> logger,
-                             ICategoryRepository categoryRepository,
-                             IProductItemRepository productItemRepository)
-    {
-      _logger = logger;
-      _categoryRepository = categoryRepository;
-      _productItemRepository = productItemRepository;
-    }
-
-    [HttpGet("categories")]
-    public async Task<IActionResult> GetCategoriesAsync()
-    {
-      var categories = await _categoryRepository.GetCategoriesAsync();
-
-      var response = new HalResponse
-      {
-        Links = new List<Link>
-                {
-                    new Link { Rel = "self", Href = "/catalog/categories" },
-                    new Link { Rel = "add", Href = "/catalog/categories", Method = "POST" }
-                },
-        Embedded = new Dictionary<string, object>
-        {
-          ["categories"] = categories.Select(c => new HalResponse
-          {
-            Links = new List<Link>
-                        {
-                            new Link { Rel = "self", Href = $"/catalog/categories/{c.Id}" },
-                            new Link { Rel = "update", Href = $"/catalog/categories/{c.Id}", Method = "PUT" },
-                            new Link { Rel = "delete", Href = $"/catalog/categories/{c.Id}", Method = "DELETE" }
-                        },
-            Data = c
-          })
-        }
-      };
-
-      return Ok(response);
-    }
-
-    [HttpGet("items")]
-    public async Task<IActionResult> GetItems(int categoryId, int page = 1)
-    {
-      var items = await _productItemRepository.GetItemsAsync();
-
-      var response = new HalResponse
-      {
-        Links = new List<Link>
-                {
-                    new Link { Rel = "self", Href = $"/catalog/items?categoryId={categoryId}&page={page}" },
-                    new Link { Rel = "add", Href = "/catalog/items", Method = "POST" }
-                },
-        Embedded = new Dictionary<string, object>
-        {
-          ["items"] = items.Select(i => new HalResponse
-          {
-            Links = new List<Link>
-                        {
-                            new Link { Rel = "self", Href = $"/catalog/items/{i.Id}" },
-                            new Link { Rel = "update", Href = $"/catalog/items/{i.Id}", Method = "PUT" },
-                            new Link { Rel = "delete", Href = $"/catalog/items/{i.Id}", Method = "DELETE" }
-                        },
-            Data = i
-          })
-        }
-      };
-
-      return Ok(response);
-    }
-
-    [HttpPost("categories")]
-    public async Task<IActionResult> AddCategoryAsync(Category category)
-    {
-      await _categoryRepository.AddCategoryAsync(category);
-      return Ok("Category added");
-    }
-
-    [HttpPost("items")]
-    public async Task<IActionResult> AddItem(ProductItem item)
-    {
-      await _productItemRepository.AddItemAsync(item);
-      return Ok("Item added");
-    }
-
-    [HttpPut("categories/{id}")]
-    public async Task<IActionResult> UpdateCategoryAsync(Category category)
-    {
-      await _categoryRepository.UpdateCategoryAsync(category);
-      return Ok($"Category with id {category.Id} updated");
-    }
-
-    [HttpPut("items/{id}")]
-    public async Task<IActionResult> UpdateItemAsync(ProductItem item)
-    {
-      await _productItemRepository.UpdateItemAsync(item);
-      return Ok($"Item with id {item.Id} updated");
-    }
-
-    [HttpDelete("items/{id}")]
-    public async Task<IActionResult> DeleteItemAsync(int id)
-    {
-      await _productItemRepository.DeleteItemAsync(id);
-      return Ok($"Item with id {id} deleted");
-    }
-
-    [HttpDelete("categories/{id}")]
-    public async Task<IActionResult> DeleteCategoryAsync(int id)
-    {
-      await _categoryRepository.DeleteCategoryAsync(id);
-      return Ok($"Category with id {id} deleted with related items");
-    }
+    _logger = logger;
+    _categoryRepository = categoryRepository;
+    _productItemRepository = productItemRepository;
   }
 
-  public class HalResponse
+  [HttpGet("categories")]
+  public async Task<IActionResult> GetCategories()
   {
-    public List<Link>? Links { get; set; }
+    var categories = await _categoryRepository.GetCategoriesAsync();
 
-    public Dictionary<string, object>? Embedded { get; set; }
+    var response = new HalResponse
+    {
+      Links = new List<Link>
+              {
+                  new Link { Rel = "self", Href = "/catalog/categories" },
+                  new Link { Rel = "add", Href = "/catalog/categories", Method = "POST" }
+              },
+      Embedded = new Dictionary<string, object>
+      {
+        ["categories"] = categories.Select(c => new HalResponse
+        {
+          Links = new List<Link>
+                      {
+                          new Link { Rel = "self", Href = $"/catalog/categories/{c.Id}" },
+                          new Link { Rel = "update", Href = $"/catalog/categories/{c.Id}", Method = "PUT" },
+                          new Link { Rel = "delete", Href = $"/catalog/categories/{c.Id}", Method = "DELETE" }
+                      },
+          Data = c
+        })
+      }
+    };
 
-    public object? Data { get; set; }
+    return Ok(response);
   }
 
-  public class Link
+  [HttpPost("categories")]
+  public async Task<IActionResult> AddCategory(Category category)
   {
-    public string? Rel { get; set; }
+    await _categoryRepository.AddCategoryAsync(category);
+    return CreatedAtAction(nameof(GetCategoryById), new { id = category.Id }, category);
+  }
 
-    public string? Href { get; set; }
+  [HttpGet("categories/{id}")]
+  public async Task<IActionResult> GetCategoryById(int id)
+  {
+    var category = await _categoryRepository.GetCategoryByIdAsync(id);
 
-    public string? Method { get; set; }
+    if (category == null)
+    {
+      return NotFound();
+    }
+
+    var response = new HalResponse
+    {
+      Links = new List<Link>
+              {
+                  new Link { Rel = "self", Href = $"/catalog/categories/{id}" },
+                  new Link { Rel = "update", Href = $"/catalog/categories/{id}", Method = "PUT" },
+                  new Link { Rel = "delete", Href = $"/catalog/categories/{id}", Method = "DELETE" }
+              },
+      Data = category
+    };
+
+    return Ok(response);
+  }
+
+  [HttpPut("categories")]
+  public async Task<IActionResult> UpdateCategory(Category category)
+  {
+    await _categoryRepository.UpdateCategoryAsync(category);
+    return Ok($"Category with id {category.Id} updated");
+  }
+
+  [HttpDelete("categories/{id}")]
+  public async Task<IActionResult> DeleteCategory(int id)
+  {
+    await _categoryRepository.DeleteCategoryAsync(id);
+    return Ok($"Category with id {id} deleted with related items");
+  }
+
+  [HttpGet("items")]
+  public async Task<IActionResult> GetProductItems(int categoryId, int page = 1)
+  {
+    var items = await _productItemRepository.GetItemsAsync(page);
+
+    var response = new HalResponse
+    {
+      Links = new List<Link>
+              {
+                  new Link { Rel = "self", Href = $"/catalog/items?categoryId={categoryId}&page={page}" },
+                  new Link { Rel = "add", Href = "/catalog/items", Method = "POST" }
+              },
+      Embedded = new Dictionary<string, object>
+      {
+        ["items"] = items.Select(i => new HalResponse
+        {
+          Links = new List<Link>
+                      {
+                          new Link { Rel = "self", Href = $"/catalog/items/{i.Id}" },
+                          new Link { Rel = "update", Href = $"/catalog/items/{i.Id}", Method = "PUT" },
+                          new Link { Rel = "delete", Href = $"/catalog/items/{i.Id}", Method = "DELETE" }
+                      },
+          Data = i
+        })
+      }
+    };
+
+    return Ok(response);
+  }
+
+  [HttpPost("items")]
+  public async Task<IActionResult> AddItem(ProductItem item)
+  {
+    await _productItemRepository.AddItemAsync(item);
+    
+    return CreatedAtAction(nameof(GetItemById), new { id = item.Id }, item);
+  }
+
+  [HttpGet("items/{id}")]
+  public async Task<IActionResult> GetItemById(int id)
+  {
+    var item = await _productItemRepository.GetItemByIdAsync(id);
+
+    if (item == null)
+    {
+      return NotFound();
+    }
+
+    var response = new HalResponse
+    {
+      Links = new List<Link>
+              {
+                  new Link { Rel = "self", Href = $"/catalog/items/{id}" },
+                  new Link { Rel = "update", Href = $"/catalog/items/{id}", Method = "PUT" },
+                  new Link { Rel = "delete", Href = $"/catalog/items/{id}", Method = "DELETE" }
+              },
+      Data = item
+    };
+
+    return Ok(response);
+  }
+
+  [HttpPut("items/{id}")]
+  public async Task<IActionResult> UpdateItem(ProductItem item)
+  {
+    await _productItemRepository.UpdateItemAsync(item);
+    return Ok($"Item with id {item.Id} updated");
+  }
+
+  [HttpDelete("items/{id}")]
+  public async Task<IActionResult> DeleteItem(int id)
+  {
+    await _productItemRepository.DeleteItemAsync(id);
+    return Ok($"Item with id {id} deleted");
   }
 }
 

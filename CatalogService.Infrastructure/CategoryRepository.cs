@@ -27,12 +27,14 @@ public class CategoryRepository : ICategoryRepository
 
   public async Task AddCategoryAsync(Category category)
   {
+    category.Validate();
     _dbContext.Categories.Add(category);
     await _dbContext.SaveChangesAsync();
   }
 
   public async Task UpdateCategoryAsync(Category category)
   {
+    category.Validate();
     _dbContext.Entry(category).State = EntityState.Modified;
     await _dbContext.SaveChangesAsync();
   }
