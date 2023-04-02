@@ -10,6 +10,10 @@ namespace CartingService.BLL
     private readonly ICartRepository _cartRepository;
     private Mapper _cartMapper;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CartService"/> class.
+    /// </summary>
+    /// <param name="cartRepository">The cart repository.</param>
     public CartService(ICartRepository cartRepository)
     {
       _cartRepository = cartRepository;
@@ -23,6 +27,11 @@ namespace CartingService.BLL
       _cartMapper = new Mapper(config);
     }
 
+    /// <summary>
+    /// Gets the cart items.
+    /// </summary>
+    /// <param name="cartGuid">The cart GUID.</param>
+    /// <returns>The cart items.</returns>
     public Cart GetCartItems(string cartGuid)
     {
       var guid = new Guid(cartGuid);
@@ -31,6 +40,11 @@ namespace CartingService.BLL
       return cart;
     }
 
+    /// <summary>
+    /// Adds a cart item.
+    /// </summary>
+    /// <param name="cartGuid">The cart GUID.</param>
+    /// <param name="cartItem">The cart item.</param>
     public void AddCartItem(string cartGuid, CartItem cartItem)
     {
       var guid = new Guid(cartGuid);
@@ -38,6 +52,11 @@ namespace CartingService.BLL
       _cartRepository.AddCartItem(guid, cartItemToAdd);
     }
 
+    /// <summary>
+    /// Removes a cart item.
+    /// </summary>
+    /// <param name="cartGuid">The cart GUID.</param>
+    /// <param name="cartItemId">The cart item ID.</param>
     public void RemoveCartItem(string cartGuid, int cartItemId)
     {
       var guid = new Guid(cartGuid);

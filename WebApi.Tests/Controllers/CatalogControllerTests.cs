@@ -47,18 +47,18 @@ public class CategoryControllerTests
     // Assert
     Assert.IsNotNull(okResult);
     Assert.IsNotNull(halResponse);
-    Assert.AreEqual(200, okResult.StatusCode);
+    Assert.AreEqual(200, okResult?.StatusCode);
     Assert.AreEqual("/catalog/categories", halResponse.Links[0].Href);
     Assert.AreEqual("POST", halResponse.Links[1].Method);
 
     var categoriesEmbedded = halResponse.Embedded["categories"] as IEnumerable<HalResponse>;
     Assert.IsNotNull(categoriesEmbedded);
-    Assert.AreEqual(categories.Count, categoriesEmbedded.Count());
+    Assert.AreEqual(categories.Count, categoriesEmbedded?.Count());
 
     for (var i = 0; i < categories.Count; i++)
     {
       var category = categories[i];
-      var halCategory = categoriesEmbedded.ElementAt(i);
+      var halCategory = categoriesEmbedded?.ElementAt(i);
       Assert.AreEqual($"/catalog/categories/{category.Id}", halCategory.Links[0].Href);
       Assert.AreEqual("PUT", halCategory.Links[1].Method);
       Assert.AreEqual($"/catalog/categories/{category.Id}", halCategory.Links[2].Href);
@@ -83,10 +83,10 @@ public class CategoryControllerTests
 
     // Assert
     Assert.IsNotNull(createdAtActionResult);
-    Assert.AreEqual(201, createdAtActionResult.StatusCode);
-    Assert.AreEqual("GetCategoryById", createdAtActionResult.ActionName);
-    Assert.AreEqual(1, createdAtActionResult.RouteValues["id"]);
-    Assert.AreEqual(category, createdAtActionResult.Value);
+    Assert.AreEqual(201, createdAtActionResult?.StatusCode);
+    Assert.AreEqual("GetCategoryById", createdAtActionResult?.ActionName);
+    Assert.AreEqual(1, createdAtActionResult?.RouteValues["id"]);
+    Assert.AreEqual(category, createdAtActionResult?.Value);
   }
 
   // [Test]
@@ -186,7 +186,7 @@ public class CategoryControllerTests
 
     // Assert
     Assert.IsNotNull(badRequestResult);
-    Assert.AreEqual(400, badRequestResult.StatusCode);
+    Assert.AreEqual(400, badRequestResult?.StatusCode);
   }
 
   [Test]
@@ -203,8 +203,8 @@ public class CategoryControllerTests
 
     // Assert
     Assert.IsNotNull(okResult);
-    Assert.AreEqual(200, okResult.StatusCode);
-    Assert.AreEqual($"Category with id {categoryId} deleted with related items", okResult.Value);
+    Assert.AreEqual(200, okResult?.StatusCode);
+    Assert.AreEqual($"Category with id {categoryId} deleted with related items", okResult?.Value);
   }
 
   [Test]
