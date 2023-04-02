@@ -4,7 +4,7 @@ namespace CartingService.DAL;
 
 public interface ICartRepository
 {
-  DbCart GetCartItemList(int cartId);
-  void AddCartItem(int cartId, DbCartItem cartItem);
-  void RemoveCartItem(int cartId, int cartItemId);
+  DbCart GetCartItemList(Guid cartGuid);
+  void AddCartItem(Guid cartGuid, DbCartItem cartItem);
+  void RemoveCartItem(Guid cartGuid, int cartItemId);
 }

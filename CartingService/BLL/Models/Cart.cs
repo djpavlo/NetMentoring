@@ -2,12 +2,12 @@ namespace CartingService.BLL.Models;
 
 public class Cart
 {
-  public int Id { get; private set; } // unique id generated on the client-side
+  public string Guid { get; private set; } // unique id generated on the client-side
   public List<CartItem> Items { get; set; } // list of items in the cart
 
-  public Cart(int id)
+  public Cart(string guid)
   {
-    Id = id;
+    Guid = guid;
     Items = new List<CartItem>();
   }
 }

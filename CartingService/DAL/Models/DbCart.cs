@@ -1,10 +1,12 @@
 using CartingService.DAL.Models;
+using LiteDB;
 
 namespace CartingService.DAL;
 
 public class DbCart
 {
-  public int Id { get; set; }
+  [BsonId]
+  public Guid Guid { get; set; }
   public List<DbCartItem> Items { get; set; }
   public DbCart()
   {
