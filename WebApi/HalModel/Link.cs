@@ -1,4 +1,4 @@
-namespace WebApi.Controllers;
+namespace WebApi.HalModel;
 
 public class Link
 {

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
 using WebApi.Controllers;
+using WebApi.HalModel;
 
 namespace WebApi.Tests.Controllers;
 

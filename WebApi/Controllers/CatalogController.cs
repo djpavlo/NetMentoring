@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CatalogService.Domain.Models;
 using CatalogService.Domain.Interfaces;
+using WebApi.HalModel;
 
 namespace WebApi.Controllers;
 
