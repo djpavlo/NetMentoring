@@ -86,6 +86,11 @@ public class CatalogController : ControllerBase
   [HttpPut("categories")]
   public async Task<IActionResult> UpdateCategory(Category category)
   {
+    if (category == null)
+    {
+      return BadRequest();      
+    }
+
     await _categoryRepository.UpdateCategoryAsync(category);
     return Ok($"Category with id {category.Id} updated");
   }
@@ -101,6 +106,11 @@ public class CatalogController : ControllerBase
   public async Task<IActionResult> GetProductItems(int categoryId, int page = 1)
   {
     var items = await _productItemRepository.GetItemsAsync(page);
+
+    if (items == null)
+    {
+      return NotFound();      
+    }
 
     var response = new HalResponse
     {
@@ -128,15 +138,20 @@ public class CatalogController : ControllerBase
   }
 
   [HttpPost("items")]
-  public async Task<IActionResult> AddItem(ProductItem item)
+  public async Task<IActionResult> AddProductItem(ProductItem item)
   {
+    if (item == null)
+    {
+      return BadRequest();
+    }
+
     await _productItemRepository.AddItemAsync(item);
     
-    return CreatedAtAction(nameof(GetItemById), new { id = item.Id }, item);
+    return CreatedAtAction(nameof(GetProductItemById), new { id = item.Id }, item);
   }
 
   [HttpGet("items/{id}")]
-  public async Task<IActionResult> GetItemById(int id)
+  public async Task<IActionResult> GetProductItemById(int id)
   {
     var item = await _productItemRepository.GetItemByIdAsync(id);
 
@@ -160,17 +175,27 @@ public class CatalogController : ControllerBase
   }
 
   [HttpPut("items/{id}")]
-  public async Task<IActionResult> UpdateItem(ProductItem item)
+  public async Task<IActionResult> UpdateProductItem(ProductItem item)
   {
+    if (item == null)
+    {
+      return BadRequest();
+    }
+
     await _productItemRepository.UpdateItemAsync(item);
-    return Ok($"Item with id {item.Id} updated");
+    return Ok($"Product item with id {item.Id} updated");
   }
 
   [HttpDelete("items/{id}")]
-  public async Task<IActionResult> DeleteItem(int id)
+  public async Task<IActionResult> DeleteProductItem(int id)
   {
+    if (id == 0)
+    {
+      return BadRequest();
+    }
+    
     await _productItemRepository.DeleteItemAsync(id);
-    return Ok($"Item with id {id} deleted");
+    return Ok($"Product item with id {id} deleted");
   }
 }
 

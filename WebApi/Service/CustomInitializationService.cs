@@ -3,14 +3,11 @@ using CatalogService.Infrastructure;
 
 public class CustomInitializationService : IHostedService
 {
-  private readonly IConfiguration _config;
   private readonly IServiceScopeFactory _scopeFactory;
 
-  public CustomInitializationService(IConfiguration config, IServiceScopeFactory scopeFactory)
+  public CustomInitializationService(IServiceScopeFactory scopeFactory)
   {
-    _config = config;
     _scopeFactory = scopeFactory;
-
   }
 
   public async Task StartAsync(CancellationToken cancellationToken)
@@ -20,9 +17,6 @@ public class CustomInitializationService : IHostedService
       // Get the scoped service from the scope
       using (var dbContext = scope.ServiceProvider.GetService<CatalogDbContext>())
       {
-
-        // some date initialization
-
         var categories = new List<Category>
           {
               new Category { Id = 1, Name = "Category1" },
@@ -37,8 +31,6 @@ public class CustomInitializationService : IHostedService
 
   public Task StopAsync(CancellationToken cancellationToken)
   {
-    // Your cleanup code here if needed.
-    // ...
     return Task.CompletedTask;
   }
 }
