@@ -27,12 +27,14 @@ public class CategoryRepository : ICategoryRepository
 
   public async Task AddCategoryAsync(Category category)
   {
+    category.Validate();
     _dbContext.Categories.Add(category);
     await _dbContext.SaveChangesAsync();
   }
 
   public async Task UpdateCategoryAsync(Category category)
   {
+    category.Validate();
     _dbContext.Entry(category).State = EntityState.Modified;
     await _dbContext.SaveChangesAsync();
   }
@@ -40,6 +42,10 @@ public class CategoryRepository : ICategoryRepository
   public async Task DeleteCategoryAsync(int id)
   {
     var category = await _dbContext.Categories.FindAsync(id);
+    if (category == null)
+    {
+        throw new Exception($"Category with id {id} not found.");
+    }
     _dbContext.Categories.Remove(category);
     await _dbContext.SaveChangesAsync();
   }

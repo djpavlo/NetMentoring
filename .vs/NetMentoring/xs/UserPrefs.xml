@@ -1,41 +1,27 @@
-﻿<Properties StartupConfiguration="{7EF6FA39-2671-4E98-9C9D-86478A5E24C0}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs" relfile="CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs" line="22" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.CatalogService.Domain.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupConfiguration="{AC30B7BD-9460-4AD7-9089-87B6A3150929}|Default">
+  <MonoDevelop.Ide.ItemProperties.WebApi FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WebApi.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Program.cs">
+    <Files>
+      <File FileName="WebApi/Controllers/CatalogController.cs" Line="1" Column="1" />
+      <File FileName="WebApi/Program.cs" Line="10" Column="21" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NetMentoring" expanded="True">
-            <Node name="CatalogService.Domain" expanded="True">
-              <Node name="Interfaces" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
+            <Node name="WebApi" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
             </Node>
-            <Node name="CatalogService.Domain.Tests" expanded="True" />
-            <Node name="CatalogService.Infrastructure.Tests" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="NetMentoring" expanded="True">
-            <Node name="CatalogService.Domain.Tests" expanded="True" />
-            <Node name="CatalogService.Infrastructure.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>
