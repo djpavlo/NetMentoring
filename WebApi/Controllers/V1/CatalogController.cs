@@ -4,7 +4,7 @@ using CatalogService.Domain.Interfaces;
 using WebApi.HalModel;
 using Asp.Versioning;
 
-namespace WebApi.Controllers;
+namespace WebApi.Controllers.V1;
 
 /// <summary>
 /// Represents the RESTful catalog service.

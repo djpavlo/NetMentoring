@@ -5,7 +5,7 @@ using CartingService.BLL.Models;
 using CartingService.BLL;
 using Asp.Versioning;
 
-namespace CartingService.Controllers;
+namespace WebApi.Controllers.V1;
 
 /// <summary>
 /// Represents the RESTful cart service.

@@ -3,10 +3,10 @@ using CatalogService.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
-using WebApi.Controllers;
+using WebApi.Controllers.V1;
 using WebApi.HalModel;
 
-namespace WebApi.Tests.Controllers;
+namespace WebApi.Tests.Controllers.V1;
 
 [TestFixture]
 public class CategoryControllerTests
