@@ -1,25 +1,28 @@
 ﻿<Properties StartupConfiguration="{AC30B7BD-9460-4AD7-9089-87B6A3150929}|Default">
-  <MonoDevelop.Ide.ItemProperties.WebApi FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.WebApi.Tests FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CatalogService.Domain/Interfaces/IIProductemRepository.cs">
     <Files>
-      <File FileName="WebApi/Controllers/CatalogController.cs" Line="1" Column="1" />
+      <File FileName="WebApi/Controllers/CatalogController.cs" Line="23" Column="21" />
       <File FileName="WebApi/Program.cs" Line="10" Column="21" />
+      <File FileName="CatalogService.Domain/Interfaces/ICategoryRepository.cs" Line="5" Column="18" />
+      <File FileName="CatalogService.Domain/Interfaces/IIProductemRepository.cs" Line="13" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NetMentoring" expanded="True">
-            <Node name="WebApi" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="NetMentoring" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="NetMentoring" expanded="True" />
         </State>
       </Pad>
     </Pads>

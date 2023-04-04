@@ -22,10 +22,10 @@ namespace CartingService.UnitTests
     public void GetCartItems_ShouldReturnCartWithItems_WhenCartExists()
     {
       // Arrange
-      var cartId = 1;
+      var cartGuid = Guid.NewGuid();
       var dbCart = new DbCart
       {
-        Id = cartId,
+        Guid = cartGuid,
         Items = new List<DbCartItem>
                 {
                     new DbCartItem { Id = 1, Name = "Apple", Price = 0.5m, Quantity = 2 },
@@ -33,9 +33,9 @@ namespace CartingService.UnitTests
                 }
       };
 
-      _cartRepositoryMock.Setup(x => x.GetCartItemList(cartId)).Returns(dbCart);
+      _cartRepositoryMock.Setup(x => x.GetCartItemList(cartGuid)).Returns(dbCart);
 
-      var expectedCart = new Cart(cartId)
+      var expectedCart = new Cart(cartGuid.ToString())
       {
         Items = new List<CartItem>
                 {
@@ -45,13 +45,13 @@ namespace CartingService.UnitTests
       };
 
       // Set up mock repository behavior
-      _cartRepositoryMock.Setup(r => r.GetCartItemList(cartId)).Returns(dbCart);
+      _cartRepositoryMock.Setup(r => r.GetCartItemList(cartGuid)).Returns(dbCart);
 
       // Act
-      var actualCart = _cartService.GetCartItems(cartId);
+      var actualCart = _cartService.GetCartItems(cartGuid.ToString());
 
       // Assert
-      Assert.AreEqual(expectedCart.Id, actualCart.Id);
+      Assert.AreEqual(expectedCart.Guid, actualCart.Guid);
       CollectionAssert.AreEqual(expectedCart.Items, actualCart.Items);
     }
 
@@ -59,11 +59,11 @@ namespace CartingService.UnitTests
     public void GetCartItems_ShouldReturnNull_WhenCartDoesNotExist()
     {
       // Arrange
-      var cartId = 1;
-      _cartRepositoryMock.Setup(x => x.GetCartItemList(cartId)).Returns((DbCart)null);
+      var cartGuid = Guid.NewGuid();
+      _cartRepositoryMock.Setup(x => x.GetCartItemList(cartGuid)).Returns((DbCart)null);
 
       // Act
-      var cart = _cartService.GetCartItems(cartId);
+      var cart = _cartService.GetCartItems(cartGuid.ToString());
 
       // Assert
       Assert.Null(cart);
@@ -73,28 +73,28 @@ namespace CartingService.UnitTests
     public void RemoveCartItem_ShouldCallRepositoryMethod_WhenValidParameters()
     {
       // Arrange
-      var cartId = 1;
+      var cartGuid = Guid.NewGuid();
       var cartItemId = 1;
 
       // Act
-      _cartService.RemoveCartItem(cartId, cartItemId);
+      _cartService.RemoveCartItem(cartGuid.ToString(), cartItemId);
 
       // Assert
-      _cartRepositoryMock.Verify(x => x.RemoveCartItem(cartId, cartItemId), Times.Once);
+      _cartRepositoryMock.Verify(x => x.RemoveCartItem(cartGuid, cartItemId), Times.Once);
     }
 
     [Test]
     public void AddCartItem_ShouldCallRepositoryMethod_WhenValidParameters()
     {
       // Arrange
-      var cartId = 1;
+      var cartGuid = Guid.NewGuid();
       var cartItem = new CartItem(1, "Apple", null, 0.5m, 2);
 
       // Act
-      _cartService.AddCartItem(cartId, cartItem);
+      _cartService.AddCartItem(cartGuid.ToString(), cartItem);
 
       // Assert
-      _cartRepositoryMock.Verify(x => x.AddCartItem(cartId, It.IsAny<DbCartItem>()), Times.Once);
+      _cartRepositoryMock.Verify(x => x.AddCartItem(cartGuid, It.IsAny<DbCartItem>()), Times.Once);
     }
   }
 }
