@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using CatalogService.Domain.Models;
+﻿using Asp.Versioning;
 using CatalogService.Domain.Interfaces;
-using WebApi.HalModel;
-using Asp.Versioning;
+using CatalogService.Domain.Models;
+using CatalogWebApi.HalModel;
+using Microsoft.AspNetCore.Mvc;
 
-namespace WebApi.Controllers.V1;
+namespace CatalogWebApi.Controllers.V1;
 
 /// <summary>
 /// Represents the RESTful catalog service.

@@ -1,5 +1,4 @@
 ﻿<Properties StartupConfiguration="{AC30B7BD-9460-4AD7-9089-87B6A3150929}|Default">
-  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -7,22 +6,43 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CatalogService.Domain/Interfaces/IIProductemRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi.Tests/Controllers/V2/CartControllerTests.cs">
     <Files>
-      <File FileName="WebApi/Controllers/CatalogController.cs" Line="23" Column="21" />
-      <File FileName="WebApi/Program.cs" Line="10" Column="21" />
-      <File FileName="CatalogService.Domain/Interfaces/ICategoryRepository.cs" Line="5" Column="18" />
-      <File FileName="CatalogService.Domain/Interfaces/IIProductemRepository.cs" Line="13" Column="2" />
+      <File FileName="WebApi/Controllers/V1/CartController.cs" Line="1" Column="1" />
+      <File FileName="WebApi/Controllers/V1/CatalogController.cs" Line="1" Column="1" />
+      <File FileName="WebApi/Controllers/V2/CartController.cs" Line="1" Column="1" />
+      <File FileName="WebApi.Tests/Controllers/V1/CartControllerTests.cs" Line="132" Column="43" />
+      <File FileName="WebApi.Tests/Controllers/Usings.cs" Line="1" Column="1" />
+      <File FileName="WebApi.Tests/Controllers/V1/CatalogControllerTests.cs" Line="1" Column="1" />
+      <File FileName="WebApi.Tests/Controllers/V2/CartControllerTests.cs" Line="74" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NetMentoring" expanded="True" selected="True" />
+          <Node name="NetMentoring" expanded="True">
+            <Node name="CartingService.UnitTests" expanded="True" />
+            <Node name="WebApi.Tests" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="V1" expanded="True" />
+                <Node name="V2" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="NetMentoring" expanded="True" />
+          <Node name="NetMentoring" expanded="True">
+            <Node name="WebApi.Tests" expanded="True">
+              <Node name="WebApi.Tests.Controllers.V1" expanded="True">
+                <Node name="CartControllerTests" expanded="True" />
+                <Node name="CategoryControllerTests" expanded="True" />
+              </Node>
+              <Node name="WebApi.Tests.Controllers.V2" expanded="True">
+                <Node name="CartControllerTests" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

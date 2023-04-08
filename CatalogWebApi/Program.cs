@@ -14,9 +14,6 @@ builder.Services.AddDbContext<CatalogDbContext>(options =>
   options.UseInMemoryDatabase("Catalog");
 });
 
-// Get the database path from appsettings.json
-var dbPath = builder.Configuration.GetSection("DatabasePath").Value;
-
 // Add services to the container.
 builder.Services.AddControllers();
 

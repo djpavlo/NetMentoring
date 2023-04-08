@@ -2,28 +2,23 @@ using CartingService.BLL;
 using CartingService.BLL.Models;
 using CartingService.DAL;
 using CartingService.DAL.Models;
+using CartWebApi.Controllers.V2;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using WebApi.Controllers.V2;
 
-namespace WebApi.Tests.Controllers.V2;
+namespace CartWebApi.Tests.Controllers.V2;
 
 [TestFixture]
 public class CartControllerTests
 {
   private Mock<ICartRepository> _mockCartRepository;
   private Mock<ICartService> _mockCartService;
-  // private Mock<IProductItemRepository> _mockProductItemRepository;
-  // private Mock<ILogger<CatalogController>> _mockLogger;
   private CartController _controller;
 
   [SetUp]
   public void Setup()
   {
     _mockCartRepository = new Mock<ICartRepository>();
-    // _mockCartService = new Mock<ICartService>();
-    // _mockProductItemRepository = new Mock<IProductItemRepository>();
-    // _mockLogger = new Mock<ILogger<CatalogController>>();
     _controller = new CartController(_mockCartRepository.Object);
   }
 
@@ -32,7 +27,6 @@ public class CartControllerTests
   {
     // Arrange
     var cartKey = Guid.NewGuid();
-    var cart = new Cart(cartKey.ToString());
     var dbCart = new DbCart();
     _mockCartRepository.Setup(repo => repo.GetCartItemList(cartKey)).Returns(dbCart);
 
@@ -48,7 +42,6 @@ public class CartControllerTests
   {
     // Arrange
     var cartKey = Guid.NewGuid();
-    var cart = new Cart(cartKey.ToString());
     var dbCart = new DbCart();
     dbCart.Items.Add(new DbCartItem()
     {
@@ -74,7 +67,7 @@ public class CartControllerTests
     // Assert
     var items = okResult?.Value as List<CartItem>;
     Assert.AreEqual(2, items?.Count);
-    Assert.AreEqual("Test Product 1", items[0].Name);
+    Assert.AreEqual("Test Product 1", items?[0].Name);
 
   }
 

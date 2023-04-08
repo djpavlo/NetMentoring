@@ -1,4 +1,4 @@
-namespace WebApi.HalModel;
+namespace CatalogWebApi.HalModel;
 
 /// <summary>
 /// A HAL response.

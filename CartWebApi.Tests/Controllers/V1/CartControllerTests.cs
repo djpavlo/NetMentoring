@@ -2,28 +2,23 @@ using CartingService.BLL;
 using CartingService.BLL.Models;
 using CartingService.DAL;
 using CartingService.DAL.Models;
+using CartWebApi.Controllers.V1;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using WebApi.Controllers.V1;
 
-namespace WebApi.Tests.Controllers.V1;
+namespace CartWebApi.Tests.Controllers.V1;
 
 [TestFixture]
 public class CartControllerTests
 {
   private Mock<ICartRepository> _mockCartRepository;
   private Mock<ICartService> _mockCartService;
-  // private Mock<IProductItemRepository> _mockProductItemRepository;
-  // private Mock<ILogger<CatalogController>> _mockLogger;
   private CartController _controller;
 
   [SetUp]
   public void Setup()
   {
     _mockCartRepository = new Mock<ICartRepository>();
-    // _mockCartService = new Mock<ICartService>();
-    // _mockProductItemRepository = new Mock<IProductItemRepository>();
-    // _mockLogger = new Mock<ILogger<CatalogController>>();
     _controller = new CartController(_mockCartRepository.Object);
   }
 

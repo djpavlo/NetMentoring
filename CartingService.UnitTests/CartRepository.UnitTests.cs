@@ -1,19 +1,18 @@
-using NUnit.Framework;
 using CartingService.DAL.Models;
 using LiteDB;
 
-namespace CartingService.DAL.UnitTests
+namespace CartingService.UnitTests
 {
   [TestFixture]
   public class CartRepositoryTests
   {
-    private const string _testDbPath = "test.db";
-    private Guid _cartGuid = Guid.NewGuid();
+    private const string TestDbPath = "test.db";
+    private readonly Guid _cartGuid = Guid.NewGuid();
 
     [SetUp]
     public void Setup()
     {
-      using var db = new LiteDatabase(_testDbPath);
+      using var db = new LiteDatabase(TestDbPath);
       var carts = db.GetCollection<DbCart>("carts");
       carts.Insert(new DbCart { Guid = _cartGuid, Items = new List<DbCartItem>() });
     }
@@ -21,14 +20,14 @@ namespace CartingService.DAL.UnitTests
     [TearDown]
     public void TearDown()
     {
-      System.IO.File.Delete(_testDbPath);
+      System.IO.File.Delete(TestDbPath);
     }
 
     [Test]
     public void AddCartItem_AddsItemToCart()
     {
       // Arrange
-      var cartRepo = new CartRepository(_testDbPath);
+      var cartRepo = new CartRepository(TestDbPath);
       var cartItem = new DbCartItem { Id = 1, Name = "Test Item", Price = 9.99m, Quantity = 1 };
 
       // Act
@@ -47,7 +46,7 @@ namespace CartingService.DAL.UnitTests
     public void RemoveCartItem_RemovesItemFromCart()
     {
       // Arrange
-      var cartRepo = new CartRepository(_testDbPath);
+      var cartRepo = new CartRepository(TestDbPath);
       var cartItem = new DbCartItem { Id = 1, Name = "Test Item", Price = 9.99m, Quantity = 1 };
       cartRepo.AddCartItem(_cartGuid, cartItem);
 
@@ -63,12 +62,12 @@ namespace CartingService.DAL.UnitTests
     public void GetCartItemList_ReturnsCartWithCorrectItems()
     {
       // Arrange
-      var cartRepo = new CartRepository(_testDbPath);
+      var cartRepo = new CartRepository(TestDbPath);
       var cartGuid = Guid.NewGuid();
       var cartItem1 = new DbCartItem { Id = 1, Name = "Test Item 1", Price = 9.99m, Quantity = 1 };
       var cartItem2 = new DbCartItem { Id = 2, Name = "Test Item 2", Price = 19.99m, Quantity = 2 };
       var cart = new DbCart { Guid = cartGuid, Items = new List<DbCartItem> { cartItem1, cartItem2 } };
-      using (var db = new LiteDatabase(_testDbPath))
+      using (var db = new LiteDatabase(TestDbPath))
       {
         var carts = db.GetCollection<DbCart>("carts");
         carts.Insert(cart);
