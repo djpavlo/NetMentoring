@@ -1,5 +1,4 @@
-﻿using CartingService.DAL;
-using CatalogService.Domain.Interfaces;
+﻿using CatalogService.Domain.Interfaces;
 using CatalogService.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Asp.Versioning;
@@ -46,7 +45,6 @@ builder.Services.AddApiVersioning(options =>
 
 
 
-// builder.Services.AddEndpointsApiExplorer();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 builder.Services.AddSwaggerGen(
@@ -63,7 +61,6 @@ builder.Services.AddSwaggerGen(
     } );
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductItemRepository, ProductItemRepository>();
-builder.Services.AddScoped<ICartRepository>(c => new CartRepository(dbPath));
 builder.Services.AddHostedService<CustomInitializationService>();
 
 var app = builder.Build();

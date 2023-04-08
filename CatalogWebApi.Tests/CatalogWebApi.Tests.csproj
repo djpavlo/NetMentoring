@@ -7,6 +7,7 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+    <RootNamespace>WebApi.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApi\WebApi.csproj" />
+    <ProjectReference Include="..\CatalogWebApi\CatalogWebApi.csproj" />
   </ItemGroup>
 </Project>
