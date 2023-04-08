@@ -1,11 +1,11 @@
-using Microsoft.AspNetCore.Mvc;
-using CartingService.DAL;
 using System.Net;
-using CartingService.BLL.Models;
-using CartingService.BLL;
 using Asp.Versioning;
+using CartingService.BLL;
+using CartingService.BLL.Models;
+using CartingService.DAL;
+using Microsoft.AspNetCore.Mvc;
 
-namespace WebApi.Controllers.V2;
+namespace CartWebApi.Controllers.V2;
 
 /// <summary>
 /// Represents the RESTful cart service.

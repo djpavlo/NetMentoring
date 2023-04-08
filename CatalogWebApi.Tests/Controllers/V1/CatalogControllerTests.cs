@@ -1,12 +1,12 @@
 using CatalogService.Domain.Interfaces;
 using CatalogService.Domain.Models;
+using CatalogWebApi.Controllers.V1;
+using CatalogWebApi.HalModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
-using WebApi.Controllers.V1;
-using WebApi.HalModel;
 
-namespace WebApi.Tests.Controllers.V1;
+namespace CatalogWebApi.Tests.Controllers.V1;
 
 [TestFixture]
 public class CategoryControllerTests
@@ -48,10 +48,10 @@ public class CategoryControllerTests
     Assert.IsNotNull(okResult);
     Assert.IsNotNull(halResponse);
     Assert.AreEqual(200, okResult?.StatusCode);
-    Assert.AreEqual("/catalog/categories", halResponse.Links[0].Href);
-    Assert.AreEqual("POST", halResponse.Links[1].Method);
+    Assert.AreEqual("/catalog/categories", halResponse?.Links?[0].Href);
+    Assert.AreEqual("POST", halResponse?.Links?[1].Method);
 
-    var categoriesEmbedded = halResponse.Embedded["categories"] as IEnumerable<HalResponse>;
+    var categoriesEmbedded = halResponse?.Embedded?["categories"] as IEnumerable<HalResponse>;
     Assert.IsNotNull(categoriesEmbedded);
     Assert.AreEqual(categories.Count, categoriesEmbedded?.Count());
 
@@ -59,11 +59,11 @@ public class CategoryControllerTests
     {
       var category = categories[i];
       var halCategory = categoriesEmbedded?.ElementAt(i);
-      Assert.AreEqual($"/catalog/categories/{category.Id}", halCategory.Links[0].Href);
-      Assert.AreEqual("PUT", halCategory.Links[1].Method);
-      Assert.AreEqual($"/catalog/categories/{category.Id}", halCategory.Links[2].Href);
-      Assert.AreEqual("DELETE", halCategory.Links[2].Method);
-      Assert.AreEqual(category, halCategory.Data);
+      Assert.AreEqual($"/catalog/categories/{category.Id}", halCategory?.Links?[0].Href);
+      Assert.AreEqual("PUT", halCategory?.Links?[1].Method);
+      Assert.AreEqual($"/catalog/categories/{category.Id}", halCategory?.Links?[2].Href);
+      Assert.AreEqual("DELETE", halCategory?.Links?[2].Method);
+      Assert.AreEqual(category, halCategory?.Data);
     }
   }
 
@@ -85,36 +85,9 @@ public class CategoryControllerTests
     Assert.IsNotNull(createdAtActionResult);
     Assert.AreEqual(201, createdAtActionResult?.StatusCode);
     Assert.AreEqual("GetCategoryById", createdAtActionResult?.ActionName);
-    Assert.AreEqual(1, createdAtActionResult?.RouteValues["id"]);
+    Assert.AreEqual(1, createdAtActionResult?.RouteValues?["id"]);
     Assert.AreEqual(category, createdAtActionResult?.Value);
   }
-
-  // [Test]
-  // public async Task AddCategory_ReturnsBadRequest_WhenCategoryIsNull()
-  // {
-  //   // Act
-  //   var result = await _controller.AddCategory(null);
-  //   var badRequestResult = result as BadRequestResult;
-
-  //   // Assert
-  //   Assert.IsNotNull(badRequestResult);
-  //   Assert.AreEqual(400, badRequestResult.StatusCode);
-  // }
-
-  // [Test]
-  // public async Task AddCategory_ReturnsBadRequest_WhenCategoryNameIsNullOrEmpty()
-  // {
-  //   // Arrange
-  //   var category = new Category();
-
-  //   // Act
-  //   var result = await _controller.AddCategory(category);
-  //   var badRequestResult = result as BadRequestResult;
-
-  //   // Assert
-  //   Assert.IsNotNull(badRequestResult);
-  //   Assert.AreEqual(400, badRequestResult.StatusCode);
-  // }
 
   [Test]
   public async Task GetCategoryById_ReturnsOkResult_WithHalResponse()
@@ -133,12 +106,12 @@ public class CategoryControllerTests
     // Assert
     Assert.IsNotNull(okResult);
     Assert.IsNotNull(halResponse);
-    Assert.AreEqual(200, okResult.StatusCode);
-    Assert.AreEqual($"/catalog/categories/{category.Id}", halResponse.Links[0].Href);
-    Assert.AreEqual("PUT", halResponse.Links[1].Method);
-    Assert.AreEqual($"/catalog/categories/{category.Id}", halResponse.Links[2].Href);
-    Assert.AreEqual("DELETE", halResponse.Links[2].Method);
-    Assert.AreEqual(category, halResponse.Data);
+    Assert.AreEqual(200, okResult?.StatusCode);
+    Assert.AreEqual($"/catalog/categories/{category.Id}", halResponse?.Links?[0].Href);
+    Assert.AreEqual("PUT", halResponse?.Links?[1].Method);
+    Assert.AreEqual($"/catalog/categories/{category.Id}", halResponse?.Links?[2].Href);
+    Assert.AreEqual("DELETE", halResponse?.Links?[2].Method);
+    Assert.AreEqual(category, halResponse?.Data);
   }
 
   [Test]
@@ -156,7 +129,7 @@ public class CategoryControllerTests
 
     // Assert
     Assert.IsNotNull(notFoundResult);
-    Assert.AreEqual(404, notFoundResult.StatusCode);
+    Assert.AreEqual(404, notFoundResult?.StatusCode);
   }
 
   [Test]
@@ -173,8 +146,8 @@ public class CategoryControllerTests
 
     // Assert
     Assert.IsNotNull(okResult);
-    Assert.AreEqual(200, okResult.StatusCode);
-    Assert.AreEqual($"Category with id {category.Id} updated", okResult.Value);
+    Assert.AreEqual(200, okResult?.StatusCode);
+    Assert.AreEqual($"Category with id {category.Id} updated", okResult?.Value);
   }
 
   [Test]
@@ -230,10 +203,10 @@ public class CategoryControllerTests
     Assert.IsNotNull(okResult);
     Assert.IsNotNull(halResponse);
     Assert.AreEqual(200, okResult?.StatusCode);
-    Assert.AreEqual("/catalog/items?categoryId=1&page=1", halResponse.Links[0].Href);
-    Assert.AreEqual("POST", halResponse.Links[1].Method);
+    Assert.AreEqual("/catalog/items?categoryId=1&page=1", halResponse?.Links?[0].Href);
+    Assert.AreEqual("POST", halResponse?.Links?[1].Method);
 
-    var productItemsEmbedded = halResponse.Embedded["items"] as IEnumerable<HalResponse>;
+    var productItemsEmbedded = halResponse?.Embedded?["items"] as IEnumerable<HalResponse>;
     Assert.IsNotNull(productItemsEmbedded);
     Assert.AreEqual(productItems.Count, productItemsEmbedded?.Count());
 
@@ -241,11 +214,11 @@ public class CategoryControllerTests
     {
       var productItem = productItems[i];
       var halProductItem = productItemsEmbedded?.ElementAt(i);
-      Assert.AreEqual($"/catalog/items/{productItem.Id}", halProductItem.Links[0].Href);
-      Assert.AreEqual("PUT", halProductItem.Links[1].Method);
-      Assert.AreEqual($"/catalog/items/{productItem.Id}", halProductItem.Links[2].Href);
-      Assert.AreEqual("DELETE", halProductItem.Links[2].Method);
-      Assert.AreEqual(productItem, halProductItem.Data);
+      Assert.AreEqual($"/catalog/items/{productItem.Id}", halProductItem?.Links?[0].Href);
+      Assert.AreEqual("PUT", halProductItem?.Links?[1].Method);
+      Assert.AreEqual($"/catalog/items/{productItem.Id}", halProductItem?.Links?[2].Href);
+      Assert.AreEqual("DELETE", halProductItem?.Links?[2].Method);
+      Assert.AreEqual(productItem, halProductItem?.Data);
     }
   }
 
@@ -313,11 +286,11 @@ public class CategoryControllerTests
     Assert.IsNotNull(okResult);
     Assert.IsNotNull(halResponse);
     Assert.AreEqual(200, okResult?.StatusCode);
-    Assert.AreEqual($"/catalog/items/{productItem.Id}", halResponse.Links[0].Href);
-    Assert.AreEqual("PUT", halResponse.Links[1].Method);
-    Assert.AreEqual($"/catalog/items/{productItem.Id}", halResponse.Links[2].Href);
-    Assert.AreEqual("DELETE", halResponse.Links[2].Method);
-    Assert.AreEqual(productItem, halResponse.Data);
+    Assert.AreEqual($"/catalog/items/{productItem.Id}", halResponse?.Links?[0].Href);
+    Assert.AreEqual("PUT", halResponse?.Links?[1].Method);
+    Assert.AreEqual($"/catalog/items/{productItem.Id}", halResponse?.Links?[2].Href);
+    Assert.AreEqual("DELETE", halResponse?.Links?[2].Method);
+    Assert.AreEqual(productItem, halResponse?.Data);
   }
 
   [Test]
