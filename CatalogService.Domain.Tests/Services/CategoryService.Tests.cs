@@ -1,3 +1,5 @@
+using CatalogService.Domain.Services;
+
 namespace CatalogService.Domain.Tests.Services;
 
 [TestFixture]

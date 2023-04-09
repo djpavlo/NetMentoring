@@ -2,6 +2,7 @@
 using CatalogService.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Asp.Versioning;
+using CatalogService.Domain.Services;
 using WebApi;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -58,6 +59,8 @@ builder.Services.AddSwaggerGen(
     } );
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductItemRepository, ProductItemRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductItemService, ProductItemService>();
 builder.Services.AddHostedService<CustomInitializationService>();
 
 var app = builder.Build();
