@@ -2,4 +2,3 @@
 global using Moq;
 global using CatalogService.Domain.Interfaces;
 global using CatalogService.Domain.Models;
-global using CatalogService.Services.Interfaces;

@@ -46,8 +46,8 @@ public class CatalogController : ControllerBase
     {
       Links = new List<Link>
               {
-                  new Link { Rel = "self", Href = "/catalog/categories" },
-                  new Link { Rel = "add", Href = "/catalog/categories", Method = "POST" }
+                  new() { Rel = "self", Href = "/catalog/categories" },
+                  new() { Rel = "add", Href = "/catalog/categories", Method = "POST" }
               },
       Embedded = new Dictionary<string, object>
       {
@@ -55,9 +55,9 @@ public class CatalogController : ControllerBase
         {
           Links = new List<Link>
                       {
-                          new Link { Rel = "self", Href = $"/catalog/categories/{c.Id}" },
-                          new Link { Rel = "update", Href = $"/catalog/categories/{c.Id}", Method = "PUT" },
-                          new Link { Rel = "delete", Href = $"/catalog/categories/{c.Id}", Method = "DELETE" }
+                          new() { Rel = "self", Href = $"/catalog/categories/{c.Id}" },
+                          new() { Rel = "update", Href = $"/catalog/categories/{c.Id}", Method = "PUT" },
+                          new() { Rel = "delete", Href = $"/catalog/categories/{c.Id}", Method = "DELETE" }
                       },
           Data = c
         })
@@ -102,9 +102,9 @@ public class CatalogController : ControllerBase
     {
       Links = new List<Link>
               {
-                  new Link { Rel = "self", Href = $"/catalog/categories/{id}" },
-                  new Link { Rel = "update", Href = $"/catalog/categories/{id}", Method = "PUT" },
-                  new Link { Rel = "delete", Href = $"/catalog/categories/{id}", Method = "DELETE" }
+                  new() { Rel = "self", Href = $"/catalog/categories/{id}" },
+                  new() { Rel = "update", Href = $"/catalog/categories/{id}", Method = "PUT" },
+                  new() { Rel = "delete", Href = $"/catalog/categories/{id}", Method = "DELETE" }
               },
       Data = category
     };
@@ -167,8 +167,8 @@ public class CatalogController : ControllerBase
     {
       Links = new List<Link>
               {
-                  new Link { Rel = "self", Href = $"/catalog/items?categoryId={categoryId}&page={page}" },
-                  new Link { Rel = "add", Href = "/catalog/items", Method = "POST" }
+                  new() { Rel = "self", Href = $"/catalog/items?categoryId={categoryId}&page={page}" },
+                  new() { Rel = "add", Href = "/catalog/items", Method = "POST" }
               },
       Embedded = new Dictionary<string, object>
       {
@@ -176,9 +176,9 @@ public class CatalogController : ControllerBase
         {
           Links = new List<Link>
                       {
-                          new Link { Rel = "self", Href = $"/catalog/items/{i.Id}" },
-                          new Link { Rel = "update", Href = $"/catalog/items/{i.Id}", Method = "PUT" },
-                          new Link { Rel = "delete", Href = $"/catalog/items/{i.Id}", Method = "DELETE" }
+                          new() { Rel = "self", Href = $"/catalog/items/{i.Id}" },
+                          new() { Rel = "update", Href = $"/catalog/items/{i.Id}", Method = "PUT" },
+                          new() { Rel = "delete", Href = $"/catalog/items/{i.Id}", Method = "DELETE" }
                       },
           Data = i
         })
@@ -229,9 +229,9 @@ public class CatalogController : ControllerBase
     {
       Links = new List<Link>
               {
-                  new Link { Rel = "self", Href = $"/catalog/items/{id}" },
-                  new Link { Rel = "update", Href = $"/catalog/items/{id}", Method = "PUT" },
-                  new Link { Rel = "delete", Href = $"/catalog/items/{id}", Method = "DELETE" }
+                  new() { Rel = "self", Href = $"/catalog/items/{id}" },
+                  new() { Rel = "update", Href = $"/catalog/items/{id}", Method = "PUT" },
+                  new() { Rel = "delete", Href = $"/catalog/items/{id}", Method = "DELETE" }
               },
       Data = item
     };

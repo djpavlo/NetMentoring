@@ -1,7 +1,7 @@
 using CatalogService.Domain.Interfaces;
 using CatalogService.Domain.Models;
 
-namespace CatalogService.Services.Interfaces;
+namespace CatalogService.Domain.Services;
 public class CategoryService : ICategoryService
 {
   private readonly ICategoryRepository _repository;

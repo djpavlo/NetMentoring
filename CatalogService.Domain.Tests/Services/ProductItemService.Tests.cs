@@ -1,16 +1,20 @@
+using CatalogService.Domain.Services;
+
 namespace CatalogService.Domain.Tests.Services;
 
 [TestFixture]
 public class ProductItemServiceTests
 {
   private Mock<IProductItemRepository> _mockRepository;
+  private Mock<IRabbitMqCatalogPublisher> _mockPublisher;
   private ItemService _itemService;
 
   [SetUp]
   public void Setup()
   {
     _mockRepository = new Mock<IProductItemRepository>();
-    _itemService = new ItemService(_mockRepository.Object);
+    _mockPublisher = new Mock<IRabbitMqCatalogPublisher>();
+    _itemService = new ItemService(_mockRepository.Object, _mockPublisher.Object);
   }
 
   [Test]
@@ -19,8 +23,8 @@ public class ProductItemServiceTests
     // Arrange
     var expectedItems = new List<ProductItem>
           {
-              new ProductItem { Id = 1, Name = "Item 1", Category = new Category(), Price = 9.99m, Amount = 10 },
-              new ProductItem { Id = 2, Name = "Item 2", Category = new Category(), Price = 19.99m, Amount = 5 }
+              new() { Id = 1, Name = "Item 1", Category = new Category(), Price = 9.99m, Amount = 10 },
+              new() { Id = 2, Name = "Item 2", Category = new Category(), Price = 19.99m, Amount = 5 }
           };
     _mockRepository.Setup(x => x.GetItemsAsync(null, 10)).ReturnsAsync(expectedItems);
 
