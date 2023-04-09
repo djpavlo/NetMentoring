@@ -51,7 +51,7 @@ builder.Services.AddSwaggerGen(
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 // builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddScoped<ICartRepository>(c => new CartRepository(dbPath ?? throw new InvalidOperationException()));
+builder.Services.AddScoped<ICartRepository>(_ => new CartRepository(dbPath ?? throw new InvalidOperationException()));
 
 
 var app = builder.Build();

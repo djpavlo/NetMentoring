@@ -14,7 +14,7 @@ public class RabbitMqCatalogPublisher : IRabbitMqCatalogPublisher
   {
     _queueName = queueName;
 
-    var factory = new ConnectionFactory() { HostName = hostName, Port = port, UserName = userName, Password = password };
+    var factory = new ConnectionFactory { HostName = hostName, Port = port, UserName = userName, Password = password };
     _connection = factory.CreateConnection();
     _channel = _connection.CreateModel();
     _channel.QueueDeclare(queue: _queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
