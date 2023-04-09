@@ -15,19 +15,19 @@ namespace CatalogWebApi.Controllers.V1;
 public class CatalogController : ControllerBase
 {
   private readonly ILogger<CatalogController> _logger;
-  private readonly ICategoryRepository _categoryRepository;
+  private readonly ICategoryService _categoryService;
 
-  private readonly IProductItemRepository _productItemRepository;
+  private readonly IProductItemService _productItemService;
   /// <summary>
   /// Initializes a new instance of the <see cref="CatalogController"/> class.
   /// </summary>
   public CatalogController(ILogger<CatalogController> logger,
-                           ICategoryRepository categoryRepository,
-                           IProductItemRepository productItemRepository)
+                            ICategoryService categoryService,
+                            IProductItemService productItemService)
   {
     _logger = logger;
-    _categoryRepository = categoryRepository;
-    _productItemRepository = productItemRepository;
+    _categoryService = categoryService;
+    _productItemService = productItemService;
   }
 
 
@@ -40,7 +40,7 @@ public class CatalogController : ControllerBase
   [HttpGet("categories")]
   public async Task<IActionResult> GetCategories()
   {
-    var categories = await _categoryRepository.GetCategoriesAsync();
+    var categories = await _categoryService.GetAllAsync();
 
     var response = new HalResponse
     {
@@ -77,7 +77,7 @@ public class CatalogController : ControllerBase
   [HttpPost("categories")]
   public async Task<IActionResult> AddCategory(Category category)
   {
-    await _categoryRepository.AddCategoryAsync(category);
+    await _categoryService.AddAsync(category);
     return CreatedAtAction(nameof(GetCategoryById), new { id = category.Id }, category);
   }
 
@@ -91,7 +91,7 @@ public class CatalogController : ControllerBase
   [HttpGet("categories/{id}")]
   public async Task<IActionResult> GetCategoryById(int id)
   {
-    var category = await _categoryRepository.GetCategoryByIdAsync(id);
+    var category = await _categoryService.GetByIdAsync(id);
 
     if (category == null)
     {
@@ -127,7 +127,7 @@ public class CatalogController : ControllerBase
       return BadRequest();
     }
 
-    await _categoryRepository.UpdateCategoryAsync(category);
+    await _categoryService.UpdateAsync(category);
     return Ok($"Category with id {category.Id} updated");
   }
 
@@ -141,7 +141,7 @@ public class CatalogController : ControllerBase
   [HttpDelete("categories/{id}")]
   public async Task<IActionResult> DeleteCategory(int id)
   {
-    await _categoryRepository.DeleteCategoryAsync(id);
+    await _categoryService.DeleteAsync(id);
     return Ok($"Category with id {id} deleted with related items");
   }
 
@@ -156,9 +156,10 @@ public class CatalogController : ControllerBase
   [HttpGet("items")]
   public async Task<IActionResult> GetProductItems(int categoryId, int page = 1)
   {
-    var items = await _productItemRepository.GetItemsAsync(page);
+    var items = await _productItemService.GetAllAsync(page);
 
-    if (items == null)
+    var productItems = items.ToList();
+    if (!productItems.Any())
     {
       return NotFound();
     }
@@ -172,7 +173,7 @@ public class CatalogController : ControllerBase
               },
       Embedded = new Dictionary<string, object>
       {
-        ["items"] = items.Select(i => new HalResponse
+        ["items"] = productItems.Select(i => new HalResponse
         {
           Links = new List<Link>
                       {
@@ -203,7 +204,7 @@ public class CatalogController : ControllerBase
       return BadRequest();
     }
 
-    await _productItemRepository.AddItemAsync(item);
+    await _productItemService.AddAsync(item);
 
     return CreatedAtAction(nameof(GetProductItemById), new { id = item.Id }, item);
   }
@@ -215,10 +216,10 @@ public class CatalogController : ControllerBase
   /// <returns>The product item.</returns>
   /// <response code="200">The product item was successfully retrieved.</response>
   /// <response code="404">The product item was not found.</response>
-  [HttpGet("items/{id}")]
+  [HttpGet("items/{id:int}")]
   public async Task<IActionResult> GetProductItemById(int id)
   {
-    var item = await _productItemRepository.GetItemByIdAsync(id);
+    var item = await _productItemService.GetByIdAsync(id);
 
     if (item == null)
     {
@@ -254,7 +255,7 @@ public class CatalogController : ControllerBase
       return BadRequest();
     }
 
-    await _productItemRepository.UpdateItemAsync(item);
+    await _productItemService.UpdateAsync(item);
     return Ok($"Product item with id {item.Id} updated");
   }
 
@@ -273,7 +274,7 @@ public class CatalogController : ControllerBase
       return BadRequest();
     }
 
-    await _productItemRepository.DeleteItemAsync(id);
+    await _productItemService.DeleteAsync(id);
     return Ok($"Product item with id {id} deleted");
   }
 }

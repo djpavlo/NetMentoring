@@ -16,7 +16,7 @@ public class CategoryService : ICategoryService
     return await _repository.GetCategoriesAsync();
   }
 
-  public async Task<Category> GetByIdAsync(int id)
+  public async Task<Category?> GetByIdAsync(int id)
   {
     return await _repository.GetCategoryByIdAsync(id);
   }

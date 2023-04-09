@@ -6,15 +6,16 @@ namespace CatalogService.Domain.Tests.Services;
 public class ProductItemServiceTests
 {
   private Mock<IProductItemRepository> _mockRepository;
+  private ProductItemService _itemService;
   private Mock<IRabbitMqCatalogPublisher> _mockPublisher;
-  private ItemService _itemService;
+
 
   [SetUp]
   public void Setup()
   {
     _mockRepository = new Mock<IProductItemRepository>();
     _mockPublisher = new Mock<IRabbitMqCatalogPublisher>();
-    _itemService = new ItemService(_mockRepository.Object, _mockPublisher.Object);
+    _itemService = new ProductItemService(_mockRepository.Object, _mockPublisher.Object);
   }
 
   [Test]
