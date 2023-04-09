@@ -1,23 +1,23 @@
 using CatalogService.Domain.Interfaces;
 using CatalogService.Domain.Models;
 
-namespace CatalogService.Services.Interfaces;
+namespace CatalogService.Domain.Services;
 
-public class ItemService : IProductItemService
+public class ProductItemService : IProductItemService
 {
   private readonly IProductItemRepository _repository;
 
-  public ItemService(IProductItemRepository repository)
+  public ProductItemService(IProductItemRepository repository)
   {
     _repository = repository;
   }
 
-  public async Task<IEnumerable<ProductItem>> GetAllAsync()
+  public async Task<IEnumerable<ProductItem>> GetAllAsync(int? page = null, int pageSize = 10)
   {
-    return await _repository.GetItemsAsync();
+    return await _repository.GetItemsAsync(page, pageSize);
   }
 
-  public async Task<ProductItem> GetByIdAsync(int id)
+  public async Task<ProductItem?> GetByIdAsync(int id)
   {
     return await _repository.GetItemByIdAsync(id);
   }

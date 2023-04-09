@@ -11,8 +11,8 @@ namespace CatalogWebApi.Tests.Controllers.V1;
 [TestFixture]
 public class CategoryControllerTests
 {
-  private Mock<ICategoryRepository> _mockCategoryRepository;
-  private Mock<IProductItemRepository> _mockProductItemRepository;
+  private Mock<ICategoryService> _mockCategoryService;
+  private Mock<IProductItemService> _mockProductItemService;
   private Mock<ILogger<CatalogController>> _mockLogger;
   private CatalogController _controller;
 
@@ -20,9 +20,9 @@ public class CategoryControllerTests
   public void Setup()
   {
     _mockLogger = new Mock<ILogger<CatalogController>>();
-    _mockCategoryRepository = new Mock<ICategoryRepository>();
-    _mockProductItemRepository = new Mock<IProductItemRepository>();
-    _controller = new CatalogController(_mockLogger.Object, _mockCategoryRepository.Object, _mockProductItemRepository.Object);
+    _mockCategoryService = new Mock<ICategoryService>();
+    _mockProductItemService = new Mock<IProductItemService>();
+    _controller = new CatalogController(_mockLogger.Object, _mockCategoryService.Object, _mockProductItemService.Object);
   }
 
   [Test]
@@ -31,12 +31,12 @@ public class CategoryControllerTests
     // Arrange
     var categories = new List<Category>
         {
-            new Category { Id = 1, Name = "Category 1" },
-            new Category { Id = 2, Name = "Category 2" },
-            new Category { Id = 3, Name = "Category 3" }
+            new() { Id = 1, Name = "Category 1" },
+            new() { Id = 2, Name = "Category 2" },
+            new() { Id = 3, Name = "Category 3" }
         };
 
-    _mockCategoryRepository.Setup(x => x.GetCategoriesAsync())
+    _mockCategoryService.Setup(x => x.GetAllAsync())
                    .ReturnsAsync(categories);
 
     // Act
@@ -73,7 +73,7 @@ public class CategoryControllerTests
     // Arrange
     var category = new Category { Name = "Test Category" };
 
-    _mockCategoryRepository.Setup(x => x.AddCategoryAsync(category))
+    _mockCategoryService.Setup(x => x.AddAsync(category))
                    .Callback((Category c) => c.Id = 1)
                    .Returns(Task.CompletedTask);
 
@@ -95,7 +95,7 @@ public class CategoryControllerTests
     // Arrange
     var category = new Category { Id = 1, Name = "Category 1" };
 
-    _mockCategoryRepository.Setup(x => x.GetCategoryByIdAsync(category.Id))
+    _mockCategoryService.Setup(x => x.GetByIdAsync(category.Id))
                    .ReturnsAsync(category);
 
     // Act
@@ -120,7 +120,7 @@ public class CategoryControllerTests
     // Arrange
     var categoryId = 1;
 
-    _mockCategoryRepository.Setup(x => x.GetCategoryByIdAsync(categoryId))
+    _mockCategoryService.Setup(x => x.GetByIdAsync(categoryId))
                    .ReturnsAsync((Category)null);
 
     // Act
@@ -138,7 +138,7 @@ public class CategoryControllerTests
     // Arrange
     var category = new Category { Id = 1, Name = "Category 1" };
 
-    _mockCategoryRepository.Setup(x => x.UpdateCategoryAsync(category));
+    _mockCategoryService.Setup(x => x.UpdateAsync(category));
 
     // Act
     var result = await _controller.UpdateCategory(category);
@@ -168,7 +168,7 @@ public class CategoryControllerTests
     // Arrange
     var categoryId = 1;
 
-    _mockCategoryRepository.Setup(x => x.DeleteCategoryAsync(categoryId));
+    _mockCategoryService.Setup(x => x.DeleteAsync(categoryId));
 
     // Act
     var result = await _controller.DeleteCategory(categoryId);
@@ -186,12 +186,12 @@ public class CategoryControllerTests
     // Arrange
     var productItems = new List<ProductItem>
     {
-      new ProductItem { Id = 1, Name = "Product Item 1", Price = 10.00m, Category = new Category { Id = 1, Name = "Category 1" } },
-      new ProductItem { Id = 2, Name = "Product Item 2", Price = 20.00m, Category = new Category { Id = 1, Name = "Category 1" } },
-      new ProductItem { Id = 3, Name = "Product Item 3", Price = 30.00m, Category = new Category { Id = 1, Name = "Category 1" } }
+      new() { Id = 1, Name = "Product Item 1", Price = 10.00m, Category = new Category { Id = 1, Name = "Category 1" } },
+      new() { Id = 2, Name = "Product Item 2", Price = 20.00m, Category = new Category { Id = 1, Name = "Category 1" } },
+      new() { Id = 3, Name = "Product Item 3", Price = 30.00m, Category = new Category { Id = 1, Name = "Category 1" } }
     };
 
-    _mockProductItemRepository.Setup(x => x.GetItemsAsync(1, 10))
+    _mockProductItemService.Setup(x => x.GetAllAsync(1, 10))
                    .ReturnsAsync(productItems);
 
     // Act
@@ -226,11 +226,11 @@ public class CategoryControllerTests
   public async Task GetProductItems_ReturnsNotFoundResult_WhenProductItemsIsNull()
   {
     // Arrange
-    _mockProductItemRepository.Setup(x => x.GetItemsAsync(1, 10))
+    _mockProductItemService.Setup(x => x.GetAllAsync(1, 10))
                    .ReturnsAsync((List<ProductItem>)null);
 
     // Act
-    var result = await _controller.GetProductItems(1);
+    var result = await _controller.GetProductItems(1, 10);
     var notFoundResult = result as NotFoundResult;
 
     // Assert
@@ -244,7 +244,7 @@ public class CategoryControllerTests
     // Arrange
     var productItem = new ProductItem { Id = 1, Name = "Product Item 1", Price = 10.00m, Category = new Category { Id = 1, Name = "Category 1" } };
 
-    _mockProductItemRepository.Setup(x => x.AddItemAsync(productItem));
+    _mockProductItemService.Setup(x => x.AddAsync(productItem));
 
     // Act
     var result = await _controller.AddProductItem(productItem);
@@ -274,7 +274,7 @@ public class CategoryControllerTests
     // Arrange
     var productItem = new ProductItem { Id = 1, Name = "Product Item 1", Price = 10.00m, Category = new Category { Id = 1, Name = "Category 1" } };
 
-    _mockProductItemRepository.Setup(x => x.GetItemByIdAsync(productItem.Id))
+    _mockProductItemService.Setup(x => x.GetByIdAsync(productItem.Id))
                    .ReturnsAsync(productItem);
 
     // Act
@@ -299,7 +299,7 @@ public class CategoryControllerTests
     // Arrange
     var productItem = new ProductItem { Id = 1, Name = "Product Item 1", Price = 10.00m, Category = new Category { Id = 1, Name = "Category 1" } };
 
-    _mockProductItemRepository.Setup(x => x.UpdateItemAsync(productItem));
+    _mockProductItemService.Setup(x => x.UpdateAsync(productItem));
 
     // Act
     var result = await _controller.UpdateProductItem(productItem);
@@ -329,7 +329,7 @@ public class CategoryControllerTests
     // Arrange
     var productItem = new ProductItem { Id = 1, Name = "Product Item 1", Price = 10.00m, Category = new Category { Id = 1, Name = "Category 1" } };
 
-    _mockProductItemRepository.Setup(x => x.DeleteItemAsync(productItem.Id));
+    _mockProductItemService.Setup(x => x.DeleteAsync(productItem.Id));
 
     // Act
     var result = await _controller.DeleteProductItem(productItem.Id);
