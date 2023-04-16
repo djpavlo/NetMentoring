@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
 using CatalogService.Domain.Services;
+using CatalogWebApi.Service;
+using EventBusRabbitMQ;
 using WebApi;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -30,8 +32,8 @@ builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwa
 builder.Services.AddSwaggerGen(SetupSwaggerGenOptions);
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductItemRepository, ProductItemRepository>();
-builder.Services.AddSingleton<IRabbitMqCatalogPublisher>(_ =>
-    new RabbitMqCatalogPublisher(
+builder.Services.AddSingleton<IEventBusRabbitMq>(_ =>
+    new EventBusRabbitMq(
         rabbitMqQueue ?? throw new InvalidOperationException(),
         rabbitMqHost ?? throw new InvalidOperationException(), 
         rabbitMqPort,

@@ -8,7 +8,7 @@ namespace CartingService.BLL
   public class CartService : ICartService
   {
     private readonly ICartRepository _cartRepository;
-    private Mapper _cartMapper;
+    private readonly Mapper _cartMapper;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="CartService"/> class.
@@ -61,6 +61,17 @@ namespace CartingService.BLL
     {
       var guid = new Guid(cartGuid);
       _cartRepository.RemoveCartItem(guid, cartItemId);
+    }
+    
+    /// <summary>
+    /// Update Product item price in all carts.
+    ///   </summary>
+    /// <param name="productId">The product ID.</param>
+    /// <param name="price">The new price.</param>
+    /// <returns>The number of updated carts.</returns>
+    public int UpdateProductPrice(int productId, decimal price)
+    {
+      return _cartRepository.UpdateProductPrice(productId, price);
     }
   }
 }

@@ -39,12 +39,20 @@ public class CartController : ControllerBase
   [ProducesResponseType((int)HttpStatusCode.NotFound)]
   public IActionResult GetCart(string cartKey)
   {
-    var cart = _cartService.GetCartItems(cartKey);
-    if (cart == null)
+    try
     {
-      return NotFound();
+      var cart = _cartService.GetCartItems(cartKey);
+      if (cart == null)
+      {
+        return NotFound();
+      }
+      
+      return Ok(cart);
     }
-    return Ok(cart);
+    catch (Exception e)
+    {
+      return NotFound(e.Message);
+    }
   }
   /// <summary>
   /// Adds a cart item.
@@ -77,9 +85,16 @@ public class CartController : ControllerBase
   [ProducesResponseType((int)HttpStatusCode.OK)]
   public IActionResult AddCartItem(string cartKey, [FromBody] CartItem cartItem)
   {
-    _cartService.AddCartItem(cartKey, cartItem);
+    try
+    {
+      _cartService.AddCartItem(cartKey, cartItem);
 
-    return Ok(cartItem);
+      return Ok(cartItem);
+    }
+    catch (Exception e)
+    {
+      return NotFound(e.Message);
+    }
   }
 
   /// <summary>
@@ -94,8 +109,15 @@ public class CartController : ControllerBase
   [ProducesResponseType((int)HttpStatusCode.NotFound)]
   public IActionResult RemoveCartItem(string cartKey, int cartItemId)
   {
-    _cartService.RemoveCartItem(cartKey, cartItemId);
+    try
+    {
+      _cartService.RemoveCartItem(cartKey, cartItemId);
 
-    return Ok();
+      return Ok();
+    }
+    catch (Exception e)
+    {
+      return NotFound(e.Message);
+    }
   }
 }
