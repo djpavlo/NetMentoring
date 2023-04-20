@@ -15,7 +15,7 @@ public class ProductItemRepository : IProductItemRepository
 
   public async Task<ProductItem?> GetItemByIdAsync(int id)
   {
-    return await _dbContext.ProductItems
+    return await _dbContext.ProductItems.AsNoTracking()
         .Include(i => i.Category)
         .FirstOrDefaultAsync(i => i.Id == id);
   }
@@ -38,21 +38,19 @@ public class ProductItemRepository : IProductItemRepository
 
   public async Task AddItemAsync(ProductItem item)
   {
-    item.Validate();
     await _dbContext.ProductItems.AddAsync(item);
     await _dbContext.SaveChangesAsync();
   }
 
   public async Task UpdateItemAsync(ProductItem item)
   {
-    item.Validate();
     _dbContext.Entry(item).State = EntityState.Modified;
     await _dbContext.SaveChangesAsync();
   }
 
   public async Task DeleteItemAsync(int id)
   {
-    var item = _dbContext.ProductItems.Find(id);
+    var item = await _dbContext.ProductItems.FindAsync(id);
     if (item == null)
     {
         throw new Exception($"Item with id {id} not found.");

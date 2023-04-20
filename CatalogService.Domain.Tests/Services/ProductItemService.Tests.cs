@@ -1,4 +1,5 @@
 using CatalogService.Domain.Services;
+using EventBusRabbitMQ;
 
 namespace CatalogService.Domain.Tests.Services;
 
@@ -7,12 +8,15 @@ public class ProductItemServiceTests
 {
   private Mock<IProductItemRepository> _mockRepository;
   private ProductItemService _itemService;
+  private Mock<IEventBusRabbitMq> _mockPublisher;
+
 
   [SetUp]
   public void Setup()
   {
     _mockRepository = new Mock<IProductItemRepository>();
-    _itemService = new ProductItemService(_mockRepository.Object);
+    _mockPublisher = new Mock<IEventBusRabbitMq>();
+    _itemService = new ProductItemService(_mockRepository.Object, _mockPublisher.Object);
   }
 
   [Test]
@@ -91,7 +95,9 @@ public class ProductItemServiceTests
   public async Task UpdateAsync_UpdatesItem()
   {
     // Arrange
+    
     var item = new ProductItem { Id = 1, Name = "Item 1", Category = new Category(), Price = 9.99m, Amount = 10 };
+    _mockRepository.Setup(x => x.GetItemByIdAsync(item.Id)).ReturnsAsync(item);
     _mockRepository.Setup(x => x.UpdateItemAsync(item));
 
     // Act
