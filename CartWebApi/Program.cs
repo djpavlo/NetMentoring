@@ -1,10 +1,16 @@
+using System.Security.Claims;
 using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
 using CartingService.DAL;
 using CartWebApi;
+using CartWebApi.Middleware;
 using CartWebApi.Service;
+using CatalogWebApi.AuthHelper;
 using EventBusRabbitMQ;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +23,7 @@ var rabbitMqPort = int.Parse(builder.Configuration.GetSection("RabbitMqPort").Va
 var rabbitMqUser = builder.Configuration.GetSection("RabbitMqUser").Value;
 var rabbitMqPassword = builder.Configuration.GetSection("RabbitMqPassword").Value;
 var rabbitMqQueue = builder.Configuration.GetSection("RabbitMqQueue").Value;
+var domain = $"https://{builder.Configuration["Auth0:Domain"]}/";
 
 // Add services to the container.
 
@@ -27,6 +34,28 @@ builder.Services.AddSingleton<IEventBusRabbitMq>(_ =>
         rabbitMqPort,
         rabbitMqUser ?? throw new InvalidOperationException(),
         rabbitMqPassword ?? throw new InvalidOperationException()));
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.Authority = domain;
+        options.Audience = builder.Configuration["Auth0:Audience"];
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            NameClaimType = ClaimTypes.NameIdentifier
+        };
+    });
+
+builder.Services.AddAuthorization(options =>
+{
+    var scopes = new[] { "read:category", "create:category", "update:category", "delete:category" };
+
+    foreach (var scope in scopes)
+    {
+        var requirement = new HasScopeRequirement(scope, domain);
+        options.AddPolicy(scope, policy => policy.Requirements.Add(requirement));
+    }
+});
 
 builder.Services.AddControllers();
 builder.Services.AddApiVersioning(SetupApiVersioningOptions).AddApiExplorer(SetupApiExplorerOptions);
@@ -49,7 +78,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseMiddleware<Auth0TokenMiddleware>();
 
 app.MapControllers();
 
@@ -62,7 +94,37 @@ void SetupSwaggerGenOptions(SwaggerGenOptions options)
 {
     // add a custom operation filter which sets default values
     options.OperationFilter<SwaggerDefaultValues>();
+    
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = @"JWT Authorization header using the Bearer scheme. \r\n\r\n 
+                      Enter 'Bearer' [space] and then your token in the text input below.
+                      \r\n\r\nExample: 'Bearer 12345abcdef'",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+    
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement()
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                },
+                Scheme = "oauth2",
+                Name = "Bearer",
+                In = ParameterLocation.Header,
 
+            },
+            new List<string>()
+        }
+    });
+    
     var fileName = typeof(Program).Assembly.GetName().Name + ".xml";
     var filePath = Path.Combine(AppContext.BaseDirectory, fileName);
 

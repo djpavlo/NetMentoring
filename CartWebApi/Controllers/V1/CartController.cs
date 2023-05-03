@@ -3,6 +3,7 @@ using Asp.Versioning;
 using CartingService.BLL;
 using CartingService.BLL.Models;
 using CartingService.DAL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CartWebApi.Controllers.V1;
@@ -13,6 +14,7 @@ namespace CartWebApi.Controllers.V1;
 [ApiVersion("1.0")]
 [ApiController]
 [Route("api/v{version:apiVersion}/[controller]")]
+[Authorize]
 public class CartController : ControllerBase
 {
   private readonly ICartService _cartService;
