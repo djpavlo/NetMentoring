@@ -2,6 +2,7 @@
 using CatalogService.Domain.Interfaces;
 using CatalogService.Domain.Models;
 using CatalogWebApi.HalModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CatalogWebApi.Controllers.V1;
@@ -9,6 +10,7 @@ namespace CatalogWebApi.Controllers.V1;
 /// <summary>
 /// Represents the RESTful catalog service.
 /// </summary>
+
 [ApiVersion("1.0")]
 [ApiController]
 [Route("api/v{version:apiVersion}/[controller]")]
@@ -39,6 +41,7 @@ public class CatalogController : ControllerBase
     /// <response code="200">The categories were successfully retrieved.</response>  
     [MapToApiVersion("1.0")]
     [HttpGet("categories")]
+    [Authorize("read:category")]
     public async Task<IActionResult> GetCategories()
     {
         try
@@ -83,6 +86,7 @@ public class CatalogController : ControllerBase
     /// <response code="201">The category was successfully created.</response>
     /// <response code="400">The category is null.</response>
     [HttpPost("categories")]
+    [Authorize("create:category")]
     public async Task<IActionResult> AddCategory(Category category)
     {
         try
@@ -104,6 +108,7 @@ public class CatalogController : ControllerBase
     /// <response code="200">The category was successfully retrieved.</response>
     /// <response code="404">The category was not found.</response>
     [HttpGet("categories/{id}")]
+    [Authorize("read:category")]
     public async Task<IActionResult> GetCategoryById(int id)
     {
         try
@@ -142,6 +147,7 @@ public class CatalogController : ControllerBase
     /// <response code="200">The category was successfully updated.</response>
     /// <response code="400">The category is null.</response>
     [HttpPut("categories")]
+    [Authorize("update:category")]
     public async Task<IActionResult> UpdateCategory(Category category)
     {
         try
@@ -168,6 +174,7 @@ public class CatalogController : ControllerBase
     /// <response code="200">The category was successfully deleted.</response>
     /// <response code="404">The category was not found.</response>
     [HttpDelete("categories/{id}")]
+    [Authorize("delete:category")]
     public async Task<IActionResult> DeleteCategory(int id)
     {
         try

@@ -1,42 +1,31 @@
 ﻿<Properties StartupConfiguration="{AC30B7BD-9460-4AD7-9089-87B6A3150929}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/pavel/project/NetMentoring/CatalogWebApi/Controllers/V1/CatalogController.cs" relfile="CatalogWebApi/Controllers/V1/CatalogController.cs" line="267" column="1" />
-      <Breakpoint file="/Users/pavel/project/NetMentoring/CartWebApi/Service/InitRabbitMqService.cs" relfile="CartWebApi/Service/InitRabbitMqService.cs" line="50" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Carting.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CartingService/DAL/CartRepository.cs">
     <Files>
       <File FileName="CatalogWebApi/Controllers/V1/CatalogController.cs" />
-      <File FileName="CatalogService.Domain/Services/ProductItemService.cs" Line="62" Column="2" />
+      <File FileName="CatalogService.Domain/Services/ProductItemService.cs" />
       <File FileName="CatalogService.Infrastructure/ProductItemRepository.cs" />
       <File FileName="CatalogService.Domain/Models/ProductItem.cs" />
       <File FileName="CatalogService.Domain/Interfaces/IProductItemService.cs" />
       <File FileName="CatalogService.Domain/Interfaces/IIProductemRepository.cs" />
-      <File FileName="CartWebApi/Service/InitRabbitMqService.cs" Line="52" Column="1" />
-      <File FileName="CartingService/BLL/CartService.cs" Line="74" Column="1" />
+      <File FileName="CartWebApi/Service/InitRabbitMqService.cs" />
+      <File FileName="CartingService/BLL/CartService.cs" />
       <File FileName="CartingService/DAL/CartRepository.cs" Line="49" Column="62" />
-      <File FileName="EventBusRabbitMQ/EventBusRabbitMQ.cs" Line="55" Column="1" />
-      <File FileName="CartWebApi/Controllers/V1/CartController.cs" Line="1" Column="1" />
+      <File FileName="EventBusRabbitMQ/EventBusRabbitMQ.cs" />
+      <File FileName="CartWebApi/Controllers/V1/CartController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NetMentoring" expanded="True">
-            <Node name="Carting" expanded="True">
-              <Node name="CartingService" expanded="True">
-                <Node name="BLL" expanded="True" />
-                <Node name="DAL" expanded="True" />
-              </Node>
-              <Node name="CartWebApi" expanded="True">
+            <Node name="Catalog" expanded="True">
+              <Node name="CatalogWebApi" expanded="True" selected="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
                 <Node name="Controllers" expanded="True">
                   <Node name="V1" expanded="True" />
                 </Node>
-                <Node name="Service" expanded="True" />
               </Node>
             </Node>
             <Node name="EventBusRabbitMQ" expanded="True" />
@@ -45,5 +34,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CartingService.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/pavel/project/NetMentoring/CatalogWebApi/Controllers/V1/CatalogController.cs" relfile="CatalogWebApi/Controllers/V1/CatalogController.cs" line="267" column="1" />
+      <Breakpoint file="/Users/pavel/project/NetMentoring/CartWebApi/Service/InitRabbitMqService.cs" relfile="CartWebApi/Service/InitRabbitMqService.cs" line="50" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
