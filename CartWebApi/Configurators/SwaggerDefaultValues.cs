@@ -1,10 +1,9 @@
-namespace WebApi;
-
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using System.Text.Json;
+
+namespace CartWebApi.Configurators;
 
 /// <summary>
 /// Represents the OpenAPI/Swashbuckle operation filter used to document information provided, but not used.
@@ -29,7 +28,7 @@ public class SwaggerDefaultValues : IOperationFilter
 
       foreach (var contentType in response.Content.Keys)
       {
-        if (!responseType.ApiResponseFormats.Any(x => x.MediaType == contentType))
+        if (responseType.ApiResponseFormats.All(x => x.MediaType != contentType))
         {
           response.Content.Remove(contentType);
         }
@@ -52,7 +51,7 @@ public class SwaggerDefaultValues : IOperationFilter
       if (parameter.Schema.Default == null &&
            description.DefaultValue != null &&
            description.DefaultValue is not DBNull &&
-           description.ModelMetadata is ModelMetadata modelMetadata)
+           description.ModelMetadata is { } modelMetadata)
       {
         // REF: https://github.com/Microsoft/aspnet-api-versioning/issues/429#issuecomment-605402330
         var json = JsonSerializer.Serialize(description.DefaultValue, modelMetadata.ModelType);

@@ -1,12 +1,10 @@
-namespace WebApi;
-
-using Asp.Versioning;
+using System.Text;
 using Asp.Versioning.ApiExplorer;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using System.Text;
+
+namespace CatalogWebApi.Configurators;
 
 /// <summary>
 /// Configures the Swagger generation options.
@@ -15,20 +13,20 @@ using System.Text;
 /// <see cref="IApiVersionDescriptionProvider"/> service has been resolved from the service container.</remarks>
 public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
 {
-  private readonly IApiVersionDescriptionProvider provider;
+  private readonly IApiVersionDescriptionProvider _provider;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="ConfigureSwaggerOptions"/> class.
   /// </summary>
   /// <param name="provider">The <see cref="IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
-  public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) => this.provider = provider;
+  public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) => _provider = provider;
 
   /// <inheritdoc />
   public void Configure(SwaggerGenOptions options)
   {
     // add a swagger document for each discovered API version
     // note: you might choose to skip or document deprecated API versions differently
-    foreach (var description in provider.ApiVersionDescriptions)
+    foreach (var description in _provider.ApiVersionDescriptions)
     {
       options.SwaggerDoc(description.GroupName, CreateInfoForApiVersion(description));
     }
@@ -39,7 +37,7 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
     var text = new StringBuilder("An example application with OpenAPI, Swashbuckle, and API versioning.");
     var info = new OpenApiInfo()
     {
-      Title = "Catalog Service API",
+      Title = "Cart Service API",
       Version = description.ApiVersion.ToString(),
       Contact = new OpenApiContact() { Name = "Pavel Kuzhalkou", Email = "test@test.com" },
       License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
@@ -50,9 +48,9 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
       text.Append(" This API version has been deprecated.");
     }
 
-    if (description.SunsetPolicy is SunsetPolicy policy)
+    if (description.SunsetPolicy is { } policy)
     {
-      if (policy.Date is DateTimeOffset when)
+      if (policy.Date is { } when)
       {
         text.Append(" The API will be sunset on ")
             .Append(when.Date.ToShortDateString())

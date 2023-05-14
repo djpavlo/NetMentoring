@@ -1,11 +1,10 @@
 using System.Text;
-using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace CartWebApi;
+namespace CartWebApi.Configurators;
 
 /// <summary>
 /// Configures the Swagger generation options.
