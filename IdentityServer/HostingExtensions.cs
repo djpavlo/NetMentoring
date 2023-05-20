@@ -1,6 +1,7 @@
 using Duende.IdentityServer;
 using Duende.IdentityServer.Test;
 using IdentityServer.Pages;
+using Microsoft.AspNetCore.Identity;
 using Serilog;
 
 namespace IdentityServer;
@@ -10,6 +11,7 @@ internal static class HostingExtensions
     public static WebApplication ConfigureServices(this WebApplicationBuilder builder)
     {
         builder.Services.AddRazorPages();
+        // builder.Services.AddScoped<IUserClaimsPrincipalFactory<TestUser>, UserClaimsPrincipalFactory<TestUser>>();
 
         var isBuilder = builder.Services.AddIdentityServer(options =>
             {
