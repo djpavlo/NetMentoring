@@ -1,85 +1,94 @@
+using CatalogService.Domain.Interfaces;
+using CatalogService.Domain.Models;
+using CatalogWebApi.GraphQL.Types;
+using GraphQL;
+using GraphQL.Types;
+
+namespace CatalogWebApi.GraphQL.Mutations;
+
+/// <summary>
+/// Represents a GraphQL mutation for the catalog API.
+/// </summary>
 public class CatalogMutation : ObjectGraphType
+{
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CatalogMutation"/> class.
+    /// </summary>
+    public CatalogMutation(IServiceProvider serviceProvider)
     {
-        public CatalogMutation(ICategoryService categoryService, IProductItemService productItemService)
+        var categoryService = serviceProvider.GetRequiredService<ICategoryService>();
+        var productItemService = serviceProvider.GetRequiredService<IProductItemService>();
+        
+        Field<CategoryType>("addCategory")
+        .Arguments(
+             new QueryArguments(
+                new QueryArgument<NonNullGraphType<CategoryInputType>> { Name = "category" }
+        ))
+        .ResolveAsync(async context =>
         {
-            Field<CategoryType>(
-                "addCategory",
-                arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "name" }
-                ),
-                resolve: context =>
-                {
-                    var name = context.GetArgument<string>("name");
-                    return categoryService.AddCategory(name);
-                }
-            );
-
-            Field<ProductItemType>(
-                "addItem",
-                arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "name" },
-                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "categoryId" }
-                ),
-                resolve: context =>
-                {
-                    var name = context.GetArgument<string>("name");
-                    var categoryId = context.GetArgument<int>("categoryId");
-                    return productItemService.AddItem(name, categoryId);
-                }
-            );
-
-            Field<CategoryType>(
-                "updateCategory",
-                arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id" },
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "name" }
-                ),
-                resolve: context =>
-                {
-                    var id = context.GetArgument<int>("id");
-                    var name = context.GetArgument<string>("name");
-                    return categoryService.UpdateCategory(id, name);
-                }
-            );
-
-            Field<ProductItemType>(
-                "updateItem",
-                arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id" },
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "name" },
-                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "categoryId" }
-                ),
-                resolve: context =>
-                {
-                    var id = context.GetArgument<int>("id");
-                    var name = context.GetArgument<string>("name");
-                    var categoryId = context.GetArgument<int>("categoryId");
-                    return productItemService.UpdateItem(id, name, categoryId);
-                }
-            );
-
-            Field<BooleanGraphType>(
-                "deleteItem",
-                arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id" }
-                ),
-                resolve: context =>
-                {
-                    var id = context.GetArgument<int>("id");
-                    return productItemService.DeleteItem(id);
-                }
-            );
-
-            Field<BooleanGraphType>(
-                "deleteCategory",
-                arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id" }
-                ),
-                resolve: context =>
-                {
-                    var id = context.GetArgument<int>("id");
-                    return categoryService.DeleteCategory(id);
-                }
-            );
+            var category = context.GetArgument<Category>("category");
+            await categoryService.AddAsync(category);
+            return category;
         }
+
+        );
+
+        Field<ProductItemType>("addItem")
+        .Arguments(new QueryArguments(
+                new QueryArgument<NonNullGraphType<ProductItemInputType>> { Name = "productItem" }
+            ))
+        .ResolveAsync(async context =>
+        {
+            var productItem = context.GetArgument<ProductItem>("productItem");
+            await productItemService.AddAsync(productItem);
+            return productItem;
+        }
+        );
+
+        Field<CategoryType>("updateCategory")
+            .Arguments(
+             new QueryArguments(
+                new QueryArgument<NonNullGraphType<CategoryInputType>> { Name = "category" }
+        ))
+        .ResolveAsync(async context =>
+        {
+            var category = context.GetArgument<Category>("category");
+
+            await categoryService.UpdateAsync(category);
+            return category;
+        });
+
+        Field<ProductItemType>("updateItem")
+        .Arguments(new QueryArguments(
+                new QueryArgument<NonNullGraphType<ProductItemInputType>> { Name = "productItem" }
+            ))
+        .ResolveAsync(async context =>
+        {
+            var productItem = context.GetArgument<ProductItem>("productItem");
+            await productItemService.UpdateAsync(productItem);
+            return productItem;
+        });
+
+        Field<BooleanGraphType>("deleteItem")
+        .Arguments(new QueryArguments(
+                new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id" }
+            ))
+        .ResolveAsync(async context =>
+        {
+            var id = context.GetArgument<int>("id");
+            await productItemService.DeleteAsync(id);
+            return true;
+        });
+
+        Field<BooleanGraphType>("deleteCategory")
+        .Arguments(new QueryArguments(
+                new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id" }
+            ))
+        .ResolveAsync(async context =>
+        {
+            var id = context.GetArgument<int>("id");
+            await categoryService.DeleteAsync(id);
+            return true;
+        });
     }
+}

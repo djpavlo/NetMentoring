@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog.Tests", "Catalog.Te
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Carting.Tests", "Carting.Tests", "{9F3DCEB1-E112-44BE-8477-269DB0BBAB6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{6384A222-5993-48B6-8B8A-FCF51399702E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{C9BD117E-1C46-4A96-AB78-9C522D992209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9BD117E-1C46-4A96-AB78-9C522D992209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9BD117E-1C46-4A96-AB78-9C522D992209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6384A222-5993-48B6-8B8A-FCF51399702E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6384A222-5993-48B6-8B8A-FCF51399702E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6384A222-5993-48B6-8B8A-FCF51399702E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6384A222-5993-48B6-8B8A-FCF51399702E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
