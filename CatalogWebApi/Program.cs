@@ -10,7 +10,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
-
+using CatalogWebApi.GraphQL;
+using GraphQL;
+using CatalogWebApi.GraphQL.Queries;
+using CatalogWebApi.GraphQL.Mutations;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -30,6 +33,15 @@ builder.Services.AddSingleton<IEventBusRabbitMq>(_ => EventBusConfig.ConfigureEv
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductItemService, ProductItemService>();
 builder.Services.AddHostedService<CustomInitializationService>();
+builder.Services.AddSingleton<CatalogQuery>();
+builder.Services.AddSingleton<CatalogMutation>();
+builder.Services.AddScoped<CatalogSchema>();
+
+//GraphQL
+builder.Services.AddGraphQL(b => b
+.AddSchema<CatalogSchema>()
+.AddSystemTextJson()
+.AddGraphTypes(typeof(CatalogSchema).Assembly));
 
 var app = builder.Build();
 
@@ -39,6 +51,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(options => SwaggerConfig.SetupSwaggerUiOptions(options, app));
 }
+
+//GraphQL
+app.UseGraphQLGraphiQL("/ui/graphql");
 
 app.UseAuthentication();
 app.UseAuthorization();
