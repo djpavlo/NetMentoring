@@ -10,6 +10,11 @@ public static class Config
         {
             new IdentityResources.OpenId(),
             new IdentityResources.Profile(),
+            new IdentityResource
+            {
+                Name = "role",
+                UserClaims = new List<string> { "role" }
+            }
         };
 
     public static IEnumerable<ApiScope> ApiScopes =>
@@ -24,7 +29,7 @@ public static class Config
     public static IEnumerable<Client> Clients =>
         new List<Client>
         {
-            // machine to machine client (from quickstart 1)
+            // machine to machine client
             new()
             {
                 ClientId = "MentorApp",
@@ -32,7 +37,7 @@ public static class Config
 
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 // scopes that client has access to
-                AllowedScopes = { "api1" },
+                AllowedScopes = { "api1", "roles" },
                 RefreshTokenUsage = TokenUsage.OneTimeOnly
             },
             // interactive ASP.NET Core Web App
