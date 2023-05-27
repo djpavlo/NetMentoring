@@ -1,0 +1,143 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/Catalog/items/{id}/properties",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5162
+        }
+      ],
+      "UpstreamPathTemplate": "/catalogitems/{id}/properties",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [
+          "read:catalogitem"
+        ]
+      },
+      "RouteClaimsRequirement": {
+        "read:catalogitem": true
+      },
+      "FileCacheOptions": {
+        "TtlSeconds": 60
+      },
+      "Key": "CatalogItemProperties"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Catalog/items/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5162
+        }
+      ],
+      "UpstreamPathTemplate": "/catalogitems/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [
+          "read:catalogitem"
+        ]
+      },
+      "RouteClaimsRequirement": {
+        "read:catalogitem": true
+      },
+      "FileCacheOptions": {
+        "TtlSeconds": 60
+      },
+      "Key": "CatalogItem"
+    },
+    {
+      "DownstreamPathTemplate": "/catalogitems/{id}/details",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/catalogitems/{id}/details",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [
+          "read:catalogitem"
+        ]
+      },
+      "RouteClaimsRequirement": {
+        "read:catalogitem": true
+      },
+      "FileCacheOptions": {
+        "TtlSeconds": 60
+      },
+      "Aggregator": {
+        "Use": "CatalogDetailsAggregatorMiddleware"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/catalog/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5162
+        }
+      ],
+      "UpstreamPathTemplate": "/catalog/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "PUT",
+        "PATCH",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "read:category": true
+      },
+      "FileCacheOptions": {
+        "TtlSeconds": 60
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Cart/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5267
+        }
+      ],
+      "UpstreamPathTemplate": "/carting/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "PUT",
+        "PATCH",
+        "DELETE"
+      ]
+    }
+  ],
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "CatalogItemProperties",
+        "CatalogItem"
+      ],
+      "UpstreamPathTemplate": "/"      
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5002"
+  }
+}

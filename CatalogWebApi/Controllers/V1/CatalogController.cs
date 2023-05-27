@@ -156,7 +156,7 @@ public class CatalogController : ControllerBase
             {
                 return BadRequest();
             }
-            
+
             await _categoryService.UpdateAsync(category);
             return Ok($"Category with id {category.Id} updated");
         }
@@ -252,7 +252,7 @@ public class CatalogController : ControllerBase
         {
             return BadRequest();
         }
-        
+
         try
         {
             await _productItemService.AddAsync(item);
@@ -303,6 +303,46 @@ public class CatalogController : ControllerBase
     }
 
     /// <summary>
+    /// Gets the product item properties.
+    /// </summary>
+    /// <param name="id">The product item id.</param>
+    /// <returns>The product item properties.</returns>
+    /// <response code="200">The product item properties were successfully retrieved.</response>
+    /// <response code="404">The product item properties were not found.</response>
+    [HttpGet("items/{id}/properties")]
+    public async Task<IActionResult> GetProductItemPropertiesAsync(int id)
+    {
+        // Hardcoded data for demonstration purposes
+        var properties = new Dictionary<string, string>
+        {
+            { "brand", "Samsung" },
+            { "model", "s10" }
+        };
+
+        var catalogItem = await _productItemService.GetByIdAsync(id);
+
+        if (catalogItem == null)
+        {
+            return NotFound();
+        }
+
+        var response = new HalResponse
+        {
+            Links = new List<Link>
+        {
+            new() { Rel = "self", Href = $"/catalog/items/{id}/properties" }
+        },
+            Data = new
+            {
+                CatalogItemId = catalogItem.Id,
+                Properties = properties
+            }
+        };
+
+        return Ok(response);
+    }
+
+    /// <summary>
     /// Updates the product item.
     /// </summary>
     /// <param name="item">The product item.</param>
@@ -316,7 +356,7 @@ public class CatalogController : ControllerBase
         {
             return BadRequest();
         }
-        
+
         try
         {
             await _productItemService.UpdateAsync(item);

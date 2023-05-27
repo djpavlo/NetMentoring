@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Carting.Tests", "Carting.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{6384A222-5993-48B6-8B8A-FCF51399702E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGatewayOcelot", "ApiGatewayOcelot\ApiGatewayOcelot.csproj", "{C3C8E254-F150-4FDA-9787-85805C28A631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{6384A222-5993-48B6-8B8A-FCF51399702E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6384A222-5993-48B6-8B8A-FCF51399702E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6384A222-5993-48B6-8B8A-FCF51399702E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C8E254-F150-4FDA-9787-85805C28A631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C8E254-F150-4FDA-9787-85805C28A631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C8E254-F150-4FDA-9787-85805C28A631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C8E254-F150-4FDA-9787-85805C28A631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
