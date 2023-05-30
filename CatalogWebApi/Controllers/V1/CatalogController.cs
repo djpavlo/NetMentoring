@@ -69,7 +69,8 @@ public class CatalogController : ControllerBase
                     })
                 }
             };
-
+            _logger.LogWarning("An example of a Warning trace..");
+            _logger.LogError("An example of an Error level message");
             return Ok(response);
         }
         catch (Exception e)

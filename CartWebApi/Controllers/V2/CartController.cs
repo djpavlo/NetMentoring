@@ -17,33 +17,36 @@ namespace CartWebApi.Controllers.V2;
 [Authorize]
 public class CartController : ControllerBase
 {
-  private readonly ICartService _cartService;
+    private readonly ICartService _cartService;
+    private readonly ILogger _logger;
 
-  /// <summary>
-  /// Initializes a new instance of the <see cref="CartController"/> class.
-  /// </summary>
-  public CartController(ICartRepository cartRepository)
-  {
-    _cartService = new CartService(cartRepository);
-  }
 
-  /// <summary>
-  /// Gets the cart items.
-  /// </summary>
-  /// <param name="cartKey">The cart key.</param>
-  /// <returns>The cart items.</returns>
-  /// <response code="200">The cart items were successfully retrieved.</response>
-  /// <response code="404">The cart was not found.</response>
-  [HttpGet("{cartKey}"), MapToApiVersion("2.0")]
-  [ProducesResponseType(typeof(Cart), (int)HttpStatusCode.OK)]
-  [ProducesResponseType((int)HttpStatusCode.NotFound)]
-  public IActionResult GetCart(string cartKey)
-  {
-    var cart = _cartService.GetCartItems(cartKey);
-    if (cart == null)
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CartController"/> class.
+    /// </summary>
+    public CartController(ICartRepository cartRepository, ILogger<CartController> logger)
     {
-      return NotFound();
+        _cartService = new CartService(cartRepository);
+        _logger = logger;
     }
-    return Ok(cart.Items);
-  }
+
+    /// <summary>
+    /// Gets the cart items.
+    /// </summary>
+    /// <param name="cartKey">The cart key.</param>
+    /// <returns>The cart items.</returns>
+    /// <response code="200">The cart items were successfully retrieved.</response>
+    /// <response code="404">The cart was not found.</response>
+    [HttpGet("{cartKey}"), MapToApiVersion("2.0")]
+    [ProducesResponseType(typeof(Cart), (int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    public IActionResult GetCart(string cartKey)
+    {
+        var cart = _cartService.GetCartItems(cartKey);
+        if (cart == null)
+        {
+            return NotFound();
+        }
+        return Ok(cart.Items);
+    }
 }

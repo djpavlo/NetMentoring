@@ -14,11 +14,13 @@ using CatalogWebApi.GraphQL;
 using GraphQL;
 using CatalogWebApi.GraphQL.Queries;
 using CatalogWebApi.GraphQL.Mutations;
+using Microsoft.Extensions.Logging.ApplicationInsights;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // add db context
 builder.Services.AddDbContext<CatalogDbContext>(options => { options.UseInMemoryDatabase("Catalog"); });
+builder.Services.AddApplicationInsightsTelemetry();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(AuthConfig.ConfigureJwtBearer(builder));
 builder.Services.AddAuthorization(AuthConfig.ConfigureAuthorization(builder));
@@ -36,6 +38,14 @@ builder.Services.AddHostedService<CustomInitializationService>();
 builder.Services.AddSingleton<CatalogQuery>();
 builder.Services.AddSingleton<CatalogMutation>();
 builder.Services.AddScoped<CatalogSchema>();
+builder.Logging.AddApplicationInsights(
+        configureTelemetryConfiguration: (config) => 
+            config.ConnectionString = builder.Configuration["ApplicationInsights:ConnectionString"],
+            configureApplicationInsightsLoggerOptions: (options) => { }
+    );
+
+builder.Logging.AddFilter<ApplicationInsightsLoggerProvider>("mentorapp-category", LogLevel.Trace);
+
 
 //GraphQL
 builder.Services.AddGraphQL(b => b
