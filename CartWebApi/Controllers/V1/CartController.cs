@@ -17,109 +17,114 @@ namespace CartWebApi.Controllers.V1;
 [Authorize]
 public class CartController : ControllerBase
 {
-  private readonly ICartService _cartService;
+    private readonly ICartService _cartService;
+    private readonly ILogger _logger;
 
-  /// <summary>
-  /// Initializes a new instance of the <see cref="CartController"/> class.
-  /// </summary>
-  public CartController(ICartRepository cartRepository)
-  {
-    _cartService = new CartService(cartRepository);
-  }
 
-  /// <summary>
-  /// Gets the cart items.
-  /// </summary>
-  /// <param name="cartKey">The cart key.</param>
-  /// <returns>The cart object with items.</returns>
-  /// <response code="200">The cart items were successfully retrieved.</response>
-  /// <response code="404">The cart was not found.</response>
-  [HttpGet("{cartKey}")]
-  [MapToApiVersion("1.0")]
-  [Produces("application/json")]
-  [ProducesResponseType(typeof(Cart), (int)HttpStatusCode.OK)]
-  [ProducesResponseType((int)HttpStatusCode.NotFound)]
-  public IActionResult GetCart(string cartKey)
-  {
-    try
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CartController"/> class.
+    /// </summary>
+    public CartController(ICartRepository cartRepository, ILogger<CartController> logger)
     {
-      var cart = _cartService.GetCartItems(cartKey);
-      if (cart == null)
-      {
-        return NotFound();
-      }
-      
-      return Ok(cart);
+        _cartService = new CartService(cartRepository);
+        _logger = logger;
     }
-    catch (Exception e)
-    {
-      return NotFound(e.Message);
-    }
-  }
-  /// <summary>
-  /// Adds a cart item.
-  /// </summary>
-  /// <param name="cartKey">The cart key.</param>
-  /// <param name="cartItem">The cart item.</param>
-  /// <returns>The cart object with items.</returns>
-  /// <response code="200">The cart item was successfully added.</response>
-  /// <response code="404">The cart was not found.</response>
-  /// <remarks>
-  /// Sample request:
-  ///
-  ///     POST /api/v1/cart/123
-  ///     {
-  ///       "id": 1,
-  ///       "name": "Test name",
-  ///       "image": {
-  ///           "url": "http://test.com/image.jpg",
-  ///           "altText": "alt text"
-  ///           },
-  ///       "price": 10,
-  ///       "quantity": 2
-  ///     }
-  ///
-  /// </remarks>
-  [HttpPost("{cartKey}")]
-  [MapToApiVersion("1.0")]
-  [Consumes("application/json")]
-  [Produces("application/json")]
-  [ProducesResponseType((int)HttpStatusCode.OK)]
-  public IActionResult AddCartItem(string cartKey, [FromBody] CartItem cartItem)
-  {
-    try
-    {
-      _cartService.AddCartItem(cartKey, cartItem);
 
-      return Ok(cartItem);
-    }
-    catch (Exception e)
+    /// <summary>
+    /// Gets the cart items.
+    /// </summary>
+    /// <param name="cartKey">The cart key.</param>
+    /// <returns>The cart object with items.</returns>
+    /// <response code="200">The cart items were successfully retrieved.</response>
+    /// <response code="404">The cart was not found.</response>
+    [HttpGet("{cartKey}")]
+    [MapToApiVersion("1.0")]
+    [Produces("application/json")]
+    [ProducesResponseType(typeof(Cart), (int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    public IActionResult GetCart(string cartKey)
     {
-      return NotFound(e.Message);
-    }
-  }
+        try
+        {
+            var cart = _cartService.GetCartItems(cartKey);
+            if (cart == null)
+            {
+                return NotFound();
+            }
 
-  /// <summary>
-  /// Removes a cart item.
-  /// </summary>
-  /// <param name="cartKey">The cart key.</param>
-  /// <param name="cartItemId">The cart item id.</param>
-  /// <response code="200">The cart item was successfully removed.</response>
-  /// <response code="404">The cart was not found.</response>
-  [HttpDelete("{cartKey}/{cartItemId}")]
-  [ProducesResponseType((int)HttpStatusCode.OK)]
-  [ProducesResponseType((int)HttpStatusCode.NotFound)]
-  public IActionResult RemoveCartItem(string cartKey, int cartItemId)
-  {
-    try
+            return Ok(cart);
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e.Message);
+            return NotFound(e.Message);
+        }
+    }
+    
+    /// <summary>
+    /// Adds a cart item.
+    /// </summary>
+    /// <param name="cartKey">The cart key.</param>
+    /// <param name="cartItem">The cart item.</param>
+    /// <returns>The cart object with items.</returns>
+    /// <response code="200">The cart item was successfully added.</response>
+    /// <response code="404">The cart was not found.</response>
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     POST /api/v1/cart/123
+    ///     {
+    ///       "id": 1,
+    ///       "name": "Test name",
+    ///       "image": {
+    ///           "url": "http://test.com/image.jpg",
+    ///           "altText": "alt text"
+    ///           },
+    ///       "price": 10,
+    ///       "quantity": 2
+    ///     }
+    ///
+    /// </remarks>
+    [HttpPost("{cartKey}")]
+    [MapToApiVersion("1.0")]
+    [Consumes("application/json")]
+    [Produces("application/json")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public IActionResult AddCartItem(string cartKey, [FromBody] CartItem cartItem)
     {
-      _cartService.RemoveCartItem(cartKey, cartItemId);
+        try
+        {
+            _cartService.AddCartItem(cartKey, cartItem);
 
-      return Ok();
+            return Ok(cartItem);
+        }
+        catch (Exception e)
+        {
+            return NotFound(e.Message);
+        }
     }
-    catch (Exception e)
+
+    /// <summary>
+    /// Removes a cart item.
+    /// </summary>
+    /// <param name="cartKey">The cart key.</param>
+    /// <param name="cartItemId">The cart item id.</param>
+    /// <response code="200">The cart item was successfully removed.</response>
+    /// <response code="404">The cart was not found.</response>
+    [HttpDelete("{cartKey}/{cartItemId}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    public IActionResult RemoveCartItem(string cartKey, int cartItemId)
     {
-      return NotFound(e.Message);
+        try
+        {
+            _cartService.RemoveCartItem(cartKey, cartItemId);
+
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            return NotFound(e.Message);
+        }
     }
-  }
 }

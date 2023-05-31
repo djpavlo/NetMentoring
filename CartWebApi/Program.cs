@@ -1,3 +1,4 @@
+using System.Reflection;
 using CartingService.DAL;
 using CartWebApi.Configurators;
 using CartWebApi.Middleware;
@@ -6,6 +7,13 @@ using EventBusRabbitMQ;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using Serilog;
+using Serilog.Exceptions;
+using Serilog.Sinks.Elasticsearch;
+
+
+LoggerConfig.ConfigureLogging();
+Serilog.Debugging.SelfLog.Enable(Console.Error);
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -36,6 +44,9 @@ app.UseMiddleware<Auth0TokenMiddleware>();
 app.MapControllers();
 
 app.Run();
+
+
+
 
 
 

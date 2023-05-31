@@ -11,18 +11,16 @@ namespace CatalogWebApi.Tests.Controllers.V1;
 [TestFixture]
 public class CategoryControllerTests
 {
-  private Mock<ICategoryService> _mockCategoryService;
-  private Mock<IProductItemService> _mockProductItemService;
-  private Mock<ILogger<CatalogController>> _mockLogger;
-  private CatalogController _controller;
+  private readonly Mock<ICategoryService> _mockCategoryService;
+  private readonly Mock<IProductItemService> _mockProductItemService;
+  private readonly CatalogController _controller;
 
-  [SetUp]
-  public void Setup()
+  public CategoryControllerTests()
   {
-    _mockLogger = new Mock<ILogger<CatalogController>>();
     _mockCategoryService = new Mock<ICategoryService>();
     _mockProductItemService = new Mock<IProductItemService>();
-    _controller = new CatalogController(_mockLogger.Object, _mockCategoryService.Object, _mockProductItemService.Object);
+    Mock<ILogger<CatalogController>> mockLogger = new();
+    _controller = new CatalogController(mockLogger.Object, _mockCategoryService.Object, _mockProductItemService.Object);
   }
 
   [Test]
