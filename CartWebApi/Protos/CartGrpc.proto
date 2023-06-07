@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "CartWebApi";
+
+package CartGrpc;
+
+service CartGrpc {
+  rpc GetCartItems (CartRequest) returns (GrpcCart);
+  rpc GetCartItemsStream (CartRequest) returns (stream GrpcCartItem);
+  rpc AddCartItem (stream GrpcCartItem) returns (GrpcCart);
+  rpc AddCartItemStream (stream GrpcCartItem) returns (stream GrpcCart);
+}
+
+message GrpcCartItem {
+  int32 id = 1;
+  string name = 2;
+  int32 quantity = 3;
+  float price = 4;
+  string cartGuid = 5;
+}
+
+message CartRequest {
+  string cartGuid = 1;
+}
+
+message GrpcCart {
+  repeated GrpcCartItem items = 1;
+  string cartGuid = 2;
+}
+

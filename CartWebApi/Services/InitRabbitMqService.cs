@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Text.Json;
 using CartingService.BLL;
@@ -7,7 +6,7 @@ using CartWebApi.IntegrationEvent;
 using EventBusRabbitMQ;
 using RabbitMQ.Client.Events;
 
-namespace CartWebApi.Service;
+namespace CartWebApi.Services;
 
 /// <summary>
 /// Custom initialization service.

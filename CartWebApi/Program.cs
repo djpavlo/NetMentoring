@@ -1,19 +1,17 @@
-using System.Reflection;
 using CartingService.DAL;
 using CartWebApi.Configurators;
 using CartWebApi.Middleware;
-using CartWebApi.Service;
+using CartWebApi.Services;
 using EventBusRabbitMQ;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using Serilog;
-using Serilog.Exceptions;
-using Serilog.Sinks.Elasticsearch;
-
 
 LoggerConfig.ConfigureLogging();
 Serilog.Debugging.SelfLog.Enable(Console.Error);
+
+Environment.SetEnvironmentVariable("GRPC_TRACE", "call_stream");
+Environment.SetEnvironmentVariable("GRPC_VERBOSITY", "DEBUG");
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -28,6 +26,10 @@ builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwa
 builder.Services.AddSwaggerGen(SwaggerConfig.SetupSwaggerGenOptions);
 builder.Services.AddScoped<ICartRepository>(_ => RepositoryConfig.ConfigureRepository(builder));
 builder.Services.AddHostedService<InitRabbitMqService>();
+builder.Services.AddScoped<CartGrpcService>();
+builder.Services.AddGrpc();
+builder.Services.AddGrpcReflection();
+
 
 // Configure the HTTP request pipeline.
 var app = builder.Build();
@@ -36,12 +38,17 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.MapGrpcReflectionService();
 }
+// app.MapGrpcService<CartGrpcService>();
+app.MapGrpcService<CartGrpcService>();
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseMiddleware<Auth0TokenMiddleware>();
 app.MapControllers();
+
 
 app.Run();
 
