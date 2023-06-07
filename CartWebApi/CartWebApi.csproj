@@ -40,11 +40,7 @@
 
     <ItemGroup>
       <Protobuf Include="Protos\CartGrpc.proto" GrpcServices="Server" />
+      <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controllers\gRPC\" />
-    </ItemGroup>
-
 
 </Project>

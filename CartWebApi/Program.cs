@@ -40,12 +40,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     app.MapGrpcReflectionService();
 }
+// app.MapGrpcService<CartGrpcService>();
+app.MapGrpcService<CartGrpcService>();
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseMiddleware<Auth0TokenMiddleware>();
 app.MapControllers();
-app.MapGrpcService<CartGrpcService>();
 
 
 app.Run();
