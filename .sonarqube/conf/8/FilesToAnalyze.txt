@@ -1,0 +1,3 @@
+﻿/Users/pavel/project/NetMentoring/CatalogService.Infrastructure/CatalogDbContext.cs
+/Users/pavel/project/NetMentoring/CatalogService.Infrastructure/CategoryRepository.cs
+/Users/pavel/project/NetMentoring/CatalogService.Infrastructure/ProductItemRepository.cs

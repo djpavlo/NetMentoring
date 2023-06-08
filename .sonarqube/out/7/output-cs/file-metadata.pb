@@ -1,0 +1,10 @@
+_
+V/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Models/Category.Tests.csutf-8k
+b/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.csutf-8b
+Y/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Models/ProductItem.Tests.csutf-8h
+_/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.csutf-8{
+p/Users/pavel/.nuget/packages/microsoft.net.test.sdk/17.6.2/build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.csutf-8P
+G/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Usings.csutf-8‡
+|/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/obj/Debug/net7.0/CatalogService.Domain.Tests.GlobalUsings.g.csutf-8ˆ
+}/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8…
+z/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/obj/Debug/net7.0/CatalogService.Domain.Tests.AssemblyInfo.csutf-8

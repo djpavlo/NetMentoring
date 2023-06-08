@@ -1,0 +1,12 @@
+﻿/Users/pavel/project/NetMentoring/CartingService/BLL/CartService.cs
+/Users/pavel/project/NetMentoring/CartingService/BLL/ICartService.cs
+/Users/pavel/project/NetMentoring/CartingService/BLL/Models/Cart.cs
+/Users/pavel/project/NetMentoring/CartingService/BLL/Models/CartItem.cs
+/Users/pavel/project/NetMentoring/CartingService/BLL/Models/CartItemImage.cs
+/Users/pavel/project/NetMentoring/CartingService/DAL/CartRepository.cs
+/Users/pavel/project/NetMentoring/CartingService/DAL/ICartRepository.cs
+/Users/pavel/project/NetMentoring/CartingService/DAL/Models/DbCart.cs
+/Users/pavel/project/NetMentoring/CartingService/DAL/Models/DbCartItem.cs
+/Users/pavel/project/NetMentoring/CartingService/DAL/Models/DbCartItemImage.cs
+/Users/pavel/project/NetMentoring/CartingService/Program.cs
+/Users/pavel/project/NetMentoring/CartingService/.gitignore

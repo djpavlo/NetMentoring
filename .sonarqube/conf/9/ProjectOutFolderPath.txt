@@ -1,0 +1,1 @@
+/Users/pavel/project/NetMentoring/.sonarqube/out/9

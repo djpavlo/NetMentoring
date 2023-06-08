@@ -1,0 +1,9 @@
+﻿/Users/pavel/project/NetMentoring/CatalogService.Domain/IntegrationEvent/ProductPriceChangedIntegrationEvent.cs
+/Users/pavel/project/NetMentoring/CatalogService.Domain/Interfaces/ICategoryRepository.cs
+/Users/pavel/project/NetMentoring/CatalogService.Domain/Interfaces/ICategoryService.cs
+/Users/pavel/project/NetMentoring/CatalogService.Domain/Interfaces/IIProductemRepository.cs
+/Users/pavel/project/NetMentoring/CatalogService.Domain/Interfaces/IProductItemService.cs
+/Users/pavel/project/NetMentoring/CatalogService.Domain/Models/Category.cs
+/Users/pavel/project/NetMentoring/CatalogService.Domain/Models/ProductItem.cs
+/Users/pavel/project/NetMentoring/CatalogService.Domain/Services/CategoryService.cs
+/Users/pavel/project/NetMentoring/CatalogService.Domain/Services/ProductItemService.cs
