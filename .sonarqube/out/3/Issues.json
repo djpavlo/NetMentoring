@@ -93,12 +93,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Consent__ScopeListItem_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Logout_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 36,
-                  "startColumn": 67,
-                  "endLine": 36,
-                  "endColumn": 79
+                  "startLine": 55,
+                  "startColumn": 234,
+                  "endLine": 55,
+                  "endColumn": 236
                 }
               }
             }
@@ -117,108 +117,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba__ScopeListItem_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__ValidationSummary_cshtml.g.cs",
                 "region": {
-                  "startLine": 36,
-                  "startColumn": 67,
-                  "endLine": 36,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Diagnostics_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 67,
-                  "endLine": 29,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Device__ScopeListItem_cshtml.g.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 67,
-                  "endLine": 36,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Device_Success_cshtml.g.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 67,
-                  "endLine": 29,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Home_Error_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 67,
-                  "endLine": 29,
-                  "endColumn": 79
+                  "startLine": 62,
+                  "startColumn": 233,
+                  "endLine": 62,
+                  "endColumn": 235
                 }
               }
             }
@@ -285,11 +189,251 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Logout_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Nav_cshtml.g.cs",
                 "region": {
-                  "startLine": 55,
+                  "startLine": 82,
+                  "startColumn": 232,
+                  "endLine": 82,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Nav_cshtml.g.cs",
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 231,
+                  "endLine": 129,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Device_Success_cshtml.g.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 67,
+                  "endLine": 29,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Callback_cshtml.g.cs",
+                "region": {
+                  "startLine": 63,
                   "startColumn": 234,
-                  "endLine": 55,
+                  "endLine": 63,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Callback_cshtml.g.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 234,
+                  "endLine": 77,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Device__ScopeListItem_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba__ScopeListItem_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Home_Error_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 67,
+                  "endLine": 29,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Consent__ScopeListItem_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Challenge_cshtml.g.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 234,
+                  "endLine": 63,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Challenge_cshtml.g.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 234,
+                  "endLine": 77,
                   "endColumn": 236
                 }
               }
@@ -333,492 +477,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_All_cshtml.g.cs",
-                "region": {
-                  "startLine": 116,
-                  "startColumn": 231,
-                  "endLine": 116,
-                  "endColumn": 233
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Callback_cshtml.g.cs",
-                "region": {
-                  "startLine": 63,
-                  "startColumn": 234,
-                  "endLine": 63,
-                  "endColumn": 236
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Callback_cshtml.g.cs",
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 234,
-                  "endLine": 77,
-                  "endColumn": 236
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Challenge_cshtml.g.cs",
-                "region": {
-                  "startLine": 63,
-                  "startColumn": 234,
-                  "endLine": 63,
-                  "endColumn": 236
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Challenge_cshtml.g.cs",
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 234,
-                  "endLine": 77,
-                  "endColumn": 236
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Nav_cshtml.g.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 232,
-                  "endLine": 81,
-                  "endColumn": 234
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Nav_cshtml.g.cs",
-                "region": {
-                  "startLine": 127,
-                  "startColumn": 231,
-                  "endLine": 127,
-                  "endColumn": 233
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 60,
-                  "startColumn": 228,
-                  "endLine": 60,
-                  "endColumn": 230
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 231,
-                  "endLine": 75,
-                  "endColumn": 233
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 231,
-                  "endLine": 90,
-                  "endColumn": 233
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 105,
-                  "startColumn": 231,
-                  "endLine": 105,
-                  "endColumn": 233
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 120,
-                  "startColumn": 232,
-                  "endLine": 120,
-                  "endColumn": 234
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 135,
-                  "startColumn": 232,
-                  "endLine": 135,
-                  "endColumn": 234
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Redirect_Index_cshtml.g.cs",
                 "region": {
                   "startLine": 73,
                   "startColumn": 236,
                   "endLine": 73,
                   "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__ValidationSummary_cshtml.g.cs",
-                "region": {
-                  "startLine": 62,
-                  "startColumn": 233,
-                  "endLine": 62,
-                  "endColumn": 235
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
-                "region": {
-                  "startLine": 105,
-                  "startColumn": 231,
-                  "endLine": 105,
-                  "endColumn": 233
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
-                "region": {
-                  "startLine": 122,
-                  "startColumn": 233,
-                  "endLine": 122,
-                  "endColumn": 235
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
-                "region": {
-                  "startLine": 170,
-                  "startColumn": 236,
-                  "endLine": 170,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
-                "region": {
-                  "startLine": 234,
-                  "startColumn": 236,
-                  "endLine": 234,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
-                "region": {
-                  "startLine": 281,
-                  "startColumn": 235,
-                  "endLine": 281,
-                  "endColumn": 237
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Grants_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 111,
-                  "startColumn": 234,
-                  "endLine": 111,
-                  "endColumn": 236
                 }
               }
             }
@@ -1221,11 +885,35 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Grants_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 70,
+                  "startLine": 111,
+                  "startColumn": 234,
+                  "endLine": 111,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_All_cshtml.g.cs",
+                "region": {
+                  "startLine": 117,
                   "startColumn": 231,
-                  "endLine": 70,
+                  "endLine": 117,
                   "endColumn": 233
                 }
               }
@@ -1245,12 +933,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Diagnostics_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 103,
-                  "startColumn": 233,
-                  "endLine": 103,
-                  "endColumn": 235
+                  "startLine": 29,
+                  "startColumn": 67,
+                  "endLine": 29,
+                  "endColumn": 79
                 }
               }
             }
@@ -1269,12 +957,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 126,
-                  "startColumn": 240,
-                  "endLine": 126,
-                  "endColumn": 242
+                  "startLine": 61,
+                  "startColumn": 228,
+                  "endLine": 61,
+                  "endColumn": 230
                 }
               }
             }
@@ -1293,12 +981,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 147,
-                  "startColumn": 235,
-                  "endLine": 147,
-                  "endColumn": 237
+                  "startLine": 77,
+                  "startColumn": 231,
+                  "endLine": 77,
+                  "endColumn": 233
                 }
               }
             }
@@ -1317,12 +1005,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 173,
-                  "startColumn": 240,
-                  "endLine": 173,
-                  "endColumn": 242
+                  "startLine": 92,
+                  "startColumn": 231,
+                  "endLine": 92,
+                  "endColumn": 233
                 }
               }
             }
@@ -1341,12 +1029,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 194,
-                  "startColumn": 235,
-                  "endLine": 194,
-                  "endColumn": 237
+                  "startLine": 107,
+                  "startColumn": 231,
+                  "endLine": 107,
+                  "endColumn": 233
                 }
               }
             }
@@ -1365,59 +1053,35 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 229,
-                  "startColumn": 235,
-                  "endLine": 229,
-                  "endColumn": 237
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 251,
-                  "startColumn": 240,
-                  "endLine": 251,
-                  "endColumn": 242
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 331,
+                  "startLine": 122,
                   "startColumn": 232,
-                  "endLine": 331,
+                  "endLine": 122,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 232,
+                  "endLine": 137,
                   "endColumn": 234
                 }
               }
@@ -1629,6 +1293,126 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 231,
+                  "endLine": 105,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 233,
+                  "endLine": 122,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 236,
+                  "endLine": 170,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
+                "region": {
+                  "startLine": 234,
+                  "startColumn": 236,
+                  "endLine": 234,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Ciba_Consent_cshtml.g.cs",
+                "region": {
+                  "startLine": 281,
+                  "startColumn": 235,
+                  "endLine": 281,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ServerSideSessions_Index_cshtml.g.cs",
                 "region": {
                   "startLine": 82,
@@ -1727,10 +1511,226 @@
               "resultFile": {
                 "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ServerSideSessions_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 416,
+                  "startLine": 417,
                   "startColumn": 235,
-                  "endLine": 416,
+                  "endLine": 417,
                   "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 231,
+                  "endLine": 70,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 233,
+                  "endLine": 103,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 240,
+                  "endLine": 126,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 235,
+                  "endLine": 147,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 240,
+                  "endLine": 173,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 194,
+                  "startColumn": 235,
+                  "endLine": 194,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 229,
+                  "startColumn": 235,
+                  "endLine": 229,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 251,
+                  "startColumn": 240,
+                  "endLine": 251,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 331,
+                  "startColumn": 232,
+                  "endLine": 331,
+                  "endColumn": 234
                 }
               }
             }
@@ -1742,14 +1742,38 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Pages_Shared__ValidationSummary.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Pages_ExternalLogin_Challenge.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__ValidationSummary_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Challenge_cshtml.g.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 24,
+                  "endLine": 34,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Pages_Account_Logout_LoggedOut.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Logout_LoggedOut_cshtml.g.cs",
                 "region": {
                   "startLine": 35,
                   "startColumn": 24,
@@ -1766,14 +1790,134 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Pages_Redirect_Index.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Pages_Index.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Redirect_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 24,
+                  "endLine": 42,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Pages_Account_Logout_Index.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Logout_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 24,
+                  "endLine": 35,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Pages_Grants_Index.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Grants_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 24,
+                  "endLine": 35,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Pages_Shared__Layout.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 24,
+                  "endLine": 45,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Pages_Shared__Nav.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Nav_cshtml.g.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 24,
+                  "endLine": 48,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Pages_Shared__ValidationSummary.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__ValidationSummary_cshtml.g.cs",
                 "region": {
                   "startLine": 35,
                   "startColumn": 24,
@@ -1814,158 +1958,14 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Pages_Shared__Layout.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Pages_Redirect_Index.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Layout_cshtml.g.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 24,
-                  "endLine": 45,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Pages_Index.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 24,
-                  "endLine": 41,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Pages_ExternalLogin_Challenge.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_ExternalLogin_Challenge_cshtml.g.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 24,
-                  "endLine": 34,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Pages_Account_Logout_Index.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Logout_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 24,
-                  "endLine": 35,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Pages_Account_Logout_LoggedOut.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Account_Logout_LoggedOut_cshtml.g.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 24,
-                  "endLine": 35,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Pages_Shared__Nav.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Shared__Nav_cshtml.g.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 24,
-                  "endLine": 47,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Pages_Grants_Index.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Grants_Index_cshtml.g.cs",
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Pages_Redirect_Index_cshtml.g.cs",
                 "region": {
                   "startLine": 35,
                   "startColumn": 24,
@@ -2043,18 +2043,18 @@
           }
         },
         {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/SecurityHeadersAttribute.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/ConsentOptions.cs",
                 "region": {
-                  "startLine": 33,
-                  "startColumn": 13,
-                  "endLine": 33,
-                  "endColumn": 51
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 43
                 }
               }
             }
@@ -2085,27 +2085,6 @@
           }
         },
         {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/ConsentOptions.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 24,
-                  "endLine": 9,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1104",
           "level": "warning",
           "message": "Make this field 'private' and encapsulate it in a 'public' property.",
@@ -2118,27 +2097,6 @@
                   "startColumn": 24,
                   "endLine": 9,
                   "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'EnableOfflineAccess' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/ConsentOptions.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 24,
-                  "endLine": 9,
-                  "endColumn": 43
                 }
               }
             }
@@ -2169,6 +2127,195 @@
           }
         },
         {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/SecurityHeadersAttribute.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 13,
+                  "endLine": 33,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'EnableOfflineAccess' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/ConsentOptions.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 24,
+                  "endLine": 5,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 24,
+                  "endLine": 5,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'ShowLogoutPrompt' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 24,
+                  "endLine": 5,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 24,
+                  "endLine": 6,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 24,
+                  "endLine": 6,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'AutomaticRedirectAfterSignOut' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 24,
+                  "endLine": 6,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CA2211",
           "level": "note",
           "message": "Non-constant fields should not be visible",
@@ -2181,6 +2328,153 @@
                   "startColumn": 26,
                   "endLine": 12,
                   "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 14,
+                  "endLine": 7,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'EnableOfflineAccess' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 26,
+                  "endLine": 10,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 26,
+                  "endLine": 12,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 26,
+                  "endLine": 10,
+                  "endColumn": 69
                 }
               }
             }
@@ -2232,6 +2526,27 @@
           }
         },
         {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 26,
+                  "endLine": 13,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S2223",
           "level": "warning",
           "message": "Change the visibility of 'OfflineAccessDisplayName' or make it 'const' or 'readonly'.",
@@ -2265,6 +2580,300 @@
                   "startColumn": 26,
                   "endLine": 12,
                   "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 14,
+                  "endLine": 7,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 26,
+                  "endLine": 10,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 26,
+                  "endLine": 12,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 26,
+                  "endLine": 13,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 26,
+                  "endLine": 10,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'EnableOfflineAccess' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'OfflineAccessDisplayName' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 26,
+                  "endLine": 10,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'OfflineAccessDescription' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 26,
+                  "endLine": 12,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'OfflineAccessDisplayName' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 26,
+                  "endLine": 10,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'OfflineAccessDescription' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 26,
+                  "endLine": 12,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_options' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 54,
+                  "endLine": 21,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_logger' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 37,
+                  "endLine": 22,
+                  "endColumn": 44
                 }
               }
             }
@@ -2379,48 +2988,6 @@
           }
         },
         {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/LoginOptions.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 28,
-                  "endLine": 7,
-                  "endColumn": 51
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/LoginOptions.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 26,
-                  "endLine": 8,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1104",
           "level": "warning",
           "message": "Make this field 'private' and encapsulate it in a 'public' property.",
@@ -2454,6 +3021,48 @@
                   "startColumn": 24,
                   "endLine": 6,
                   "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/LoginOptions.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 28,
+                  "endLine": 7,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/LoginOptions.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 26,
+                  "endLine": 8,
+                  "endColumn": 56
                 }
               }
             }
@@ -2547,363 +3156,6 @@
           }
         },
         {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 14,
-                  "endLine": 3,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 24,
-                  "endLine": 5,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 24,
-                  "endLine": 6,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1104",
-          "level": "warning",
-          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 24,
-                  "endLine": 5,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1104",
-          "level": "warning",
-          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 24,
-                  "endLine": 6,
-                  "endColumn": 61
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'AutomaticRedirectAfterSignOut' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 24,
-                  "endLine": 6,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'ShowLogoutPrompt' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/LogoutOptions.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 24,
-                  "endLine": 5,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 14,
-                  "endLine": 7,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 24,
-                  "endLine": 9,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 26,
-                  "endLine": 10,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1104",
-          "level": "warning",
-          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 24,
-                  "endLine": 9,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 26,
-                  "endLine": 12,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1104",
-          "level": "warning",
-          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 26,
-                  "endLine": 10,
-                  "endColumn": 69
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'EnableOfflineAccess' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 24,
-                  "endLine": 9,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'OfflineAccessDisplayName' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 26,
-                  "endLine": 10,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1104",
-          "level": "warning",
-          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 26,
-                  "endLine": 13,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'OfflineAccessDescription' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/ConsentOptions.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 26,
-                  "endLine": 12,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1104",
           "level": "warning",
           "message": "Make this field 'private' and encapsulate it in a 'public' property.",
@@ -2916,216 +3168,6 @@
                   "startColumn": 19,
                   "endLine": 10,
                   "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 14,
-                  "endLine": 7,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 24,
-                  "endLine": 9,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1104",
-          "level": "warning",
-          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 24,
-                  "endLine": 9,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 26,
-                  "endLine": 10,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1104",
-          "level": "warning",
-          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 26,
-                  "endLine": 10,
-                  "endColumn": 69
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'OfflineAccessDisplayName' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 26,
-                  "endLine": 10,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'EnableOfflineAccess' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 24,
-                  "endLine": 9,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2211",
-          "level": "note",
-          "message": "Non-constant fields should not be visible",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 26,
-                  "endLine": 12,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1104",
-          "level": "warning",
-          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 26,
-                  "endLine": 13,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'OfflineAccessDescription' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/DeviceOptions.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 26,
-                  "endLine": 12,
-                  "endColumn": 50
                 }
               }
             }
@@ -3156,39 +3198,18 @@
           }
         },
         {
-          "ruleId": "S4487",
+          "ruleId": "S4792",
           "level": "warning",
-          "message": "Remove this unread private field '_options' or refactor the code to use its value.",
+          "message": "Make sure that this logger's configuration is safe.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Program.cs",
                 "region": {
-                  "startLine": 21,
-                  "startColumn": 54,
-                  "endLine": 21,
-                  "endColumn": 62
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S4487",
-          "level": "warning",
-          "message": "Remove this unread private field '_logger' or refactor the code to use its value.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 37,
-                  "endLine": 22,
-                  "endColumn": 44
+                  "startLine": 4,
+                  "startColumn": 14,
+                  "endLine": 4,
+                  "endColumn": 39
                 }
               }
             }
@@ -3240,27 +3261,6 @@
           }
         },
         {
-          "ruleId": "S1186",
-          "level": "warning",
-          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/AccessDenied.cshtml.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 17,
-                  "endLine": 7,
-                  "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S2068",
           "level": "warning",
           "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
@@ -3303,27 +3303,6 @@
           }
         },
         {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/ViewModel.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 60,
-                  "endLine": 17,
-                  "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1186",
           "level": "warning",
           "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
@@ -3351,193 +3330,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/ExternalLogin/Challenge.cshtml.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/ViewModel.cs",
                 "region": {
-                  "startLine": 25,
-                  "startColumn": 42,
-                  "endLine": 25,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/ExternalLogin/Challenge.cshtml.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 102,
-                  "endLine": 25,
-                  "endColumn": 107
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/ExternalLogin/Challenge.cshtml.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 19,
-                  "endLine": 28,
-                  "endColumn": 54
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/Index.cshtml.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 33,
-                  "endLine": 48,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 59,
-                  "endLine": 92,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/Consent.cshtml.cs",
-                "region": {
-                  "startLine": 78,
-                  "startColumn": 59,
-                  "endLine": 78,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1066",
-          "level": "warning",
-          "message": "Merge this if statement with the enclosing one.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/Index.cshtml.cs",
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 17,
-                  "endLine": 80,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/Index.cshtml.cs",
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 13,
-                  "endLine": 77,
-                  "endColumn": 15
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 59,
-                  "endLine": 75,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
-                "region": {
-                  "startLine": 109,
-                  "startColumn": 42,
-                  "endLine": 109,
-                  "endColumn": 49
+                  "startLine": 17,
+                  "startColumn": 60,
+                  "endLine": 17,
+                  "endColumn": 65
                 }
               }
             }
@@ -3728,6 +3526,111 @@
           }
         },
         {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 59,
+                  "endLine": 92,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1116",
+          "level": "warning",
+          "message": "Remove this empty statement.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/Index.cshtml.cs",
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 17,
+                  "endLine": 112,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 59,
+                  "endLine": 75,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 42,
+                  "endLine": 109,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/Index.cshtml.cs",
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 27,
+                  "endLine": 147,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CA2253",
           "level": "note",
           "message": "Named placeholders in the logging message template should not be comprised of only numeric characters",
@@ -3740,6 +3643,187 @@
                   "startColumn": 30,
                   "endLine": 133,
                   "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Ciba/Consent.cshtml.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 59,
+                  "endLine": 78,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/Index.cshtml.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 33,
+                  "endLine": 48,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/ExternalLogin/Challenge.cshtml.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 42,
+                  "endLine": 25,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/ExternalLogin/Challenge.cshtml.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 102,
+                  "endLine": 25,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/ExternalLogin/Challenge.cshtml.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 19,
+                  "endLine": 28,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1066",
+          "level": "warning",
+          "message": "Merge this if statement with the enclosing one.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/Index.cshtml.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 17,
+                  "endLine": 80,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Logout/Index.cshtml.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 13,
+                  "endLine": 77,
+                  "endColumn": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'CreateScopeViewModel' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 28,
+                  "endLine": 183,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GetOfflineAccessScope' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
+                "region": {
+                  "startLine": 210,
+                  "startColumn": 28,
+                  "endLine": 210,
+                  "endColumn": 49
                 }
               }
             }
@@ -3783,24 +3867,27 @@
           }
         },
         {
-          "ruleId": "S1116",
+          "ruleId": "S1172",
           "level": "warning",
-          "message": "Remove this empty statement.",
+          "message": "Remove this unused method parameter 'returnUrl'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/Index.cshtml.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
                 "region": {
-                  "startLine": 112,
-                  "startColumn": 17,
-                  "endLine": 112,
-                  "endColumn": 18
+                  "startLine": 140,
+                  "startColumn": 27,
+                  "endLine": 140,
+                  "endColumn": 43
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "IsRemovable": "True"
+            }
           }
         },
         {
@@ -3816,48 +3903,6 @@
                   "startColumn": 19,
                   "endLine": 45,
                   "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/Index.cshtml.cs",
-                "region": {
-                  "startLine": 147,
-                  "startColumn": 27,
-                  "endLine": 147,
-                  "endColumn": 62
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S4792",
-          "level": "warning",
-          "message": "Make sure that this logger's configuration is safe.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Program.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 14,
-                  "endLine": 4,
-                  "endColumn": 39
                 }
               }
             }
@@ -3890,16 +3935,16 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'GetOfflineAccessScope' does not access instance data and can be marked as static",
+          "message": "Member 'CreateScopeViewModel' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
                 "region": {
-                  "startLine": 210,
+                  "startLine": 191,
                   "startColumn": 28,
-                  "endLine": 210,
-                  "endColumn": 49
+                  "endLine": 191,
+                  "endColumn": 48
                 }
               }
             }
@@ -3911,16 +3956,16 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'CreateScopeViewModel' does not access instance data and can be marked as static",
+          "message": "Member 'GetOfflineAccessScope' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Device/Index.cshtml.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
                 "region": {
-                  "startLine": 183,
+                  "startLine": 225,
                   "startColumn": 28,
-                  "endLine": 183,
-                  "endColumn": 48
+                  "endLine": 225,
+                  "endColumn": 49
                 }
               }
             }
@@ -3951,72 +3996,6 @@
             "customProperties": {
               "IsRemovable": "True"
             }
-          }
-        },
-        {
-          "ruleId": "S1172",
-          "level": "warning",
-          "message": "Remove this unused method parameter 'returnUrl'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
-                "region": {
-                  "startLine": 140,
-                  "startColumn": 27,
-                  "endLine": 140,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "IsRemovable": "True"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'GetOfflineAccessScope' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
-                "region": {
-                  "startLine": 225,
-                  "startColumn": 28,
-                  "endLine": 225,
-                  "endColumn": 49
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'CreateScopeViewModel' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/IdentityServer/Pages/Consent/Index.cshtml.cs",
-                "region": {
-                  "startLine": 191,
-                  "startColumn": 28,
-                  "endLine": 191,
-                  "endColumn": 48
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
           }
         },
         {

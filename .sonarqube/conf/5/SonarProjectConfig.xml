@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SonarProjectConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/analyzer/2021/1">
   <AnalysisConfigPath>/Users/pavel/project/NetMentoring/.sonarqube/conf/SonarQubeAnalysisConfig.xml</AnalysisConfigPath>
-  <ProjectPath>/Users/pavel/project/NetMentoring/CartWebApi/CartWebApi.csproj</ProjectPath>
+  <ProjectPath>/Users/pavel/project/NetMentoring/CartingService.UnitTests/CartingService.UnitTests.csproj</ProjectPath>
   <FilesToAnalyzePath>/Users/pavel/project/NetMentoring/.sonarqube/conf/5/FilesToAnalyze.txt</FilesToAnalyzePath>
   <OutPath>/Users/pavel/project/NetMentoring/.sonarqube/out/5</OutPath>
-  <ProjectType>Product</ProjectType>
+  <ProjectType>Test</ProjectType>
   <TargetFramework>net7.0</TargetFramework>
 </SonarProjectConfig>

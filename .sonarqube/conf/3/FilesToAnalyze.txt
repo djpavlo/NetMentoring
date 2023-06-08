@@ -120,4 +120,3 @@
 /Users/pavel/project/NetMentoring/IdentityServer/wwwroot/lib/jquery/README.md
 /Users/pavel/project/NetMentoring/IdentityServer/keys/is-signing-key-7D3B7776A39B0760E8E4B9103D27E094.json
 /Users/pavel/project/NetMentoring/IdentityServer/Properties/launchSettings.json
-/Users/pavel/project/NetMentoring/IdentityServer/obj/Debug/net6.0/apphost

@@ -51,7 +51,7 @@ namespace CartingService.UnitTests
       var actualCart = _cartService.GetCartItems(cartGuid.ToString());
 
       // Assert
-      Assert.AreEqual(expectedCart.Guid, actualCart.Guid);
+      Assert.That(actualCart.Guid, Is.EqualTo(expectedCart.Guid));
       CollectionAssert.AreEqual(expectedCart.Items, actualCart.Items);
     }
 
@@ -66,7 +66,7 @@ namespace CartingService.UnitTests
       var cart = _cartService.GetCartItems(cartGuid.ToString());
 
       // Assert
-      Assert.Null(cart);
+      Assert.That(cart, Is.Null);
     }
 
     [Test]

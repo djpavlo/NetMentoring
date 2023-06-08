@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>CatalogService.Domain.Tests</ProjectName>
+  <ProjectName>CartWebApi</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
-  <ProjectType>Test</ProjectType>
-  <ProjectGuid>7ef6fa39-2671-4e98-9c9d-86478a5e24c0</ProjectGuid>
-  <FullPath>/Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/CatalogService.Domain.Tests.csproj</FullPath>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>212c6128-924d-4206-aba6-f703e5e0839d</ProjectGuid>
+  <FullPath>/Users/pavel/project/NetMentoring/CartWebApi/CartWebApi.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
     <AnalysisResult Id="FilesToAnalyze" Location="/Users/pavel/project/NetMentoring/.sonarqube/conf/6/FilesToAnalyze.txt" />

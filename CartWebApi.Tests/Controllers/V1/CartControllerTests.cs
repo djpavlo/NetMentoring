@@ -34,7 +34,7 @@ public class CartControllerTests
         var okResult = _controller.GetCart(cartKey.ToString());
 
         // Assert
-        Assert.IsInstanceOf<OkObjectResult>(okResult);
+        Assert.That(okResult, Is.InstanceOf<OkObjectResult>());
     }
 
     [Test]
@@ -67,8 +67,8 @@ public class CartControllerTests
 
         // Assert
         var responseCart = okResult?.Value as Cart;
-        Assert.AreEqual(2, responseCart?.Items.Count);
-        Assert.AreEqual("Test Product 1", responseCart?.Items[0].Name);
+        Assert.That(responseCart?.Items.Count, Is.EqualTo(2));
+        Assert.That(responseCart?.Items[0].Name, Is.EqualTo("Test Product 1"));
 
     }
 
@@ -83,7 +83,7 @@ public class CartControllerTests
         var notFoundResult = _controller.GetCart(cartKey.ToString());
 
         // Assert
-        Assert.IsInstanceOf<NotFoundResult>(notFoundResult);
+        Assert.That(notFoundResult, Is.InstanceOf<NotFoundResult>());
     }
 
     [Test]
@@ -106,9 +106,9 @@ public class CartControllerTests
         var okResult = _controller.AddCartItem(cartKey.ToString(), cartItem) as OkObjectResult;
 
         // Assert
-        Assert.IsInstanceOf<OkObjectResult>(okResult);
+        Assert.That(okResult, Is.InstanceOf<OkObjectResult>());
         var item = okResult?.Value as CartItem;
-        Assert.AreEqual("Test Product 1", item?.Name);
+        Assert.That(item?.Name, Is.EqualTo("Test Product 1"));
     }
 
     [Test]
@@ -123,6 +123,6 @@ public class CartControllerTests
         var okResult = _controller.RemoveCartItem(cartKey.ToString(), cartItemId);
 
         // Assert
-        Assert.IsInstanceOf<OkResult>(okResult);
+        Assert.That(okResult, Is.InstanceOf<OkResult>());
     }
 }

@@ -18,12 +18,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V2/CartControllerTests.cs",
                 "region": {
-                  "startLine": 63,
-                  "startColumn": 75,
-                  "endLine": 63,
-                  "endColumn": 87
+                  "startLine": 82,
+                  "startColumn": 82,
+                  "endLine": 82,
+                  "endColumn": 94
                 }
               }
             }
@@ -39,12 +39,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V2/CartControllerTests.cs",
                 "region": {
-                  "startLine": 63,
-                  "startColumn": 75,
-                  "endLine": 63,
-                  "endColumn": 87
+                  "startLine": 82,
+                  "startColumn": 82,
+                  "endLine": 82,
+                  "endColumn": 94
                 }
               }
             }
@@ -54,34 +54,18 @@
           }
         },
         {
-          "ruleId": "CS8618",
+          "ruleId": "CS8600",
           "level": "warning",
-          "message": "Non-nullable field '_cartRepositoryMock' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
+          "message": "Converting null literal or possible null value to non-nullable type.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V1/CartControllerTests.cs",
                 "region": {
-                  "startLine": 11,
-                  "startColumn": 35,
-                  "endLine": 11,
-                  "endColumn": 54
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 35,
-                  "endLine": 11,
-                  "endColumn": 54
+                  "startLine": 80,
+                  "startColumn": 82,
+                  "endLine": 80,
+                  "endColumn": 94
                 }
               }
             }
@@ -91,40 +75,76 @@
           }
         },
         {
-          "ruleId": "CS8618",
+          "ruleId": "CS8625",
           "level": "warning",
-          "message": "Non-nullable field '_cartService' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
+          "message": "Cannot convert null literal to non-nullable reference type.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V1/CartControllerTests.cs",
                 "region": {
-                  "startLine": 12,
-                  "startColumn": 25,
-                  "endLine": 12,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 25,
-                  "endLine": 12,
-                  "endColumn": 37
+                  "startLine": 80,
+                  "startColumn": 82,
+                  "endLine": 80,
+                  "endColumn": 94
                 }
               }
             }
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "NUnit2038",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.InstanceOf(expected)), instead of the classic model, Assert.IsInstanceOf(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V2/CartControllerTests.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 9,
+                  "endLine": 40,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "True",
+              "ModelName": "IsInstanceOf"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2038",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.InstanceOf(expected)), instead of the classic model, Assert.IsInstanceOf(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V2/CartControllerTests.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 9,
+                  "endLine": 88,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "True",
+              "ModelName": "IsInstanceOf"
+            }
           }
         },
         {
@@ -134,12 +154,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V2/CartControllerTests.cs",
                 "region": {
-                  "startLine": 54,
-                  "startColumn": 7,
-                  "endLine": 54,
-                  "endColumn": 58
+                  "startLine": 72,
+                  "startColumn": 9,
+                  "endLine": 72,
+                  "endColumn": 41
                 }
               }
             }
@@ -154,18 +174,18 @@
           }
         },
         {
-          "ruleId": "NUnit2016",
-          "level": "note",
-          "message": "Consider using the constraint model, Assert.That(expr, Is.Null), instead of the classic model, Assert.Null(expr)",
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V2/CartControllerTests.cs",
                 "region": {
-                  "startLine": 69,
-                  "startColumn": 7,
-                  "endLine": 69,
-                  "endColumn": 24
+                  "startLine": 73,
+                  "startColumn": 9,
+                  "endLine": 73,
+                  "endColumn": 58
                 }
               }
             }
@@ -175,344 +195,8 @@
             "customProperties": {
               "HasToleranceValue": "False",
               "IsGenericMethod": "False",
-              "ModelName": "Null"
+              "ModelName": "AreEqual"
             }
-          }
-        },
-        {
-          "ruleId": "NUnit2046",
-          "level": "note",
-          "message": "Use Assert.That(<collection>, Has.Count.EqualTo(<value>)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 25,
-                  "endLine": 58,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 13,
-                  "endLine": 39,
-                  "endColumn": 73
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 13,
-                  "endLine": 40,
-                  "endColumn": 77
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 13,
-                  "endLine": 41,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2046",
-          "level": "note",
-          "message": "Use Assert.That(<collection>, Has.Count.EqualTo(<value>)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 38,
-                  "startColumn": 25,
-                  "endLine": 38,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 116,
-                  "startColumn": 13,
-                  "endLine": 116,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 117,
-                  "startColumn": 13,
-                  "endLine": 117,
-                  "endColumn": 72
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 13,
-                  "endLine": 80,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 13,
-                  "endLine": 82,
-                  "endColumn": 74
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 13,
-                  "endLine": 83,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 84,
-                  "startColumn": 13,
-                  "endLine": 84,
-                  "endColumn": 80
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 85,
-                  "startColumn": 13,
-                  "endLine": 85,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 86,
-                  "startColumn": 13,
-                  "endLine": 86,
-                  "endColumn": 74
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 87,
-                  "startColumn": 13,
-                  "endLine": 87,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2045",
-          "level": "note",
-          "message": "Call independent Assert statements from inside an Assert.Multiple",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 13,
-                  "endLine": 88,
-                  "endColumn": 80
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "NUnit2046",
-          "level": "note",
-          "message": "Use Assert.That(<collection>, Has.Count.EqualTo(<value>)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 25,
-                  "endLine": 81,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
           }
         }
       ],
@@ -522,20 +206,6 @@
           "shortDescription": "Converting null literal or possible null value to non-nullable type.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8600)",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
-        "CS8618": {
-          "id": "CS8618",
-          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
-          "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,
@@ -570,34 +240,12 @@
             "isEnabledByDefault": true
           }
         },
-        "NUnit2016": {
-          "id": "NUnit2016",
-          "shortDescription": "Consider using Assert.That(expr, Is.Null) instead of Assert.Null(expr)",
-          "fullDescription": "Consider using the constraint model, Assert.That(expr, Is.Null), instead of the classic model, Assert.Null(expr).",
+        "NUnit2038": {
+          "id": "NUnit2038",
+          "shortDescription": "Consider using Assert.That(actual, Is.InstanceOf(expected)) instead of Assert.IsInstanceOf(expected, actual)",
+          "fullDescription": "Consider using the constraint model, Assert.That(actual, Is.InstanceOf(expected)), instead of the classic model, Assert.IsInstanceOf(expected, actual).",
           "defaultLevel": "note",
-          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2016.md",
-          "properties": {
-            "category": "Assertion",
-            "isEnabledByDefault": true
-          }
-        },
-        "NUnit2045": {
-          "id": "NUnit2045",
-          "shortDescription": "Use Assert.Multiple",
-          "fullDescription": "Hosting Asserts inside an Assert.Multiple allows detecting more than one failure.",
-          "defaultLevel": "note",
-          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2045.md",
-          "properties": {
-            "category": "Assertion",
-            "isEnabledByDefault": true
-          }
-        },
-        "NUnit2046": {
-          "id": "NUnit2046",
-          "shortDescription": "Use CollectionConstraint for better assertion messages in case of failure",
-          "fullDescription": "Use Has.Length/Has.Count/Is.Empty instead of testing property directly.",
-          "defaultLevel": "note",
-          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2046.md",
+          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2038.md",
           "properties": {
             "category": "Assertion",
             "isEnabledByDefault": true

@@ -12,21 +12,87 @@
       },
       "results": [
         {
-          "ruleId": "CS8618",
+          "ruleId": "CS8602",
           "level": "warning",
-          "message": "Non-nullable property 'Categories' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Dereference of a possibly null reference.",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure/CatalogDbContext.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 34,
+                  "endLine": 50,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 86,
+                  "endLine": 58,
+                  "endColumn": 100
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 82,
+                  "endLine": 58,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field '_mockRepository' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
                 "region": {
                   "startLine": 8,
-                  "startColumn": 10,
+                  "startColumn": 37,
                   "endLine": 8,
-                  "endColumn": 26
+                  "endColumn": 52
                 }
               }
             }
@@ -34,11 +100,48 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure/CatalogDbContext.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
                 "region": {
-                  "startLine": 10,
-                  "startColumn": 26,
-                  "endLine": 10,
+                  "startLine": 8,
+                  "startColumn": 37,
+                  "endLine": 8,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field '_service' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 28,
+                  "endLine": 9,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 28,
+                  "endLine": 9,
                   "endColumn": 36
                 }
               }
@@ -51,19 +154,19 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'ProductItems' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable field '_mockRepository' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure/CatalogDbContext.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
                 "region": {
-                  "startLine": 8,
-                  "startColumn": 10,
-                  "endLine": 8,
-                  "endColumn": 26
+                  "startLine": 9,
+                  "startColumn": 40,
+                  "endLine": 9,
+                  "endColumn": 55
                 }
               }
             }
@@ -71,12 +174,86 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure/CatalogDbContext.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 40,
+                  "endLine": 9,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field '_itemService' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 30,
+                  "endLine": 10,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 30,
+                  "endLine": 10,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field '_mockPublisher' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
                 "region": {
                   "startLine": 11,
-                  "startColumn": 29,
+                  "startColumn": 35,
                   "endLine": 11,
-                  "endColumn": 41
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 35,
+                  "endLine": 11,
+                  "endColumn": 49
                 }
               }
             }
@@ -86,49 +263,269 @@
           }
         },
         {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
+          "ruleId": "NUnit2017",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Null), instead of the classic model, Assert.IsNull(expr)",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure/ProductItemRepository.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
                 "region": {
-                  "startLine": 56,
-                  "startColumn": 15,
-                  "endLine": 56,
-                  "endColumn": 61
+                  "startLine": 64,
+                  "startColumn": 5,
+                  "endLine": 64,
+                  "endColumn": 26
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNull"
+            }
           }
         },
         {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
+          "ruleId": "NUnit2017",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Null), instead of the classic model, Assert.IsNull(expr)",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure/CategoryRepository.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
                 "region": {
-                  "startLine": 47,
-                  "startColumn": 15,
-                  "endLine": 47,
-                  "endColumn": 65
+                  "startLine": 64,
+                  "startColumn": 5,
+                  "endLine": 64,
+                  "endColumn": 30
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 5,
+                  "endLine": 37,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 5,
+                  "endLine": 34,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2003",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.True), instead of the classic model, Assert.IsTrue(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 5,
+                  "endLine": 35,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsTrue"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/ProductItemService.Tests.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 5,
+                  "endLine": 51,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2019",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 5,
+                  "endLine": 49,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNotNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 5,
+                  "endLine": 50,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Domain.Tests/Services/CategoryService.Tests.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 5,
+                  "endLine": 51,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
           }
         }
       ],
       "rules": {
+        "CS8600": {
+          "id": "CS8600",
+          "shortDescription": "Converting null literal or possible null value to non-nullable type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8600)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
         "CS8618": {
           "id": "CS8618",
           "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
@@ -143,20 +540,48 @@
             ]
           }
         },
-        "S112": {
-          "id": "S112",
-          "shortDescription": "General exceptions should never be thrown",
-          "fullDescription": "Throwing such general exceptions as Exception, SystemException, ApplicationException, IndexOutOfRangeException, NullReferenceException, OutOfMemoryException and ExecutionEngineException prevents calling methods from handling true, system-generated exceptions differently than application-generated errors.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
+        "NUnit2003": {
+          "id": "NUnit2003",
+          "shortDescription": "Consider using Assert.That(expr, Is.True) instead of Assert.IsTrue(expr)",
+          "fullDescription": "Consider using the constraint model, Assert.That(expr, Is.True), instead of the classic model, Assert.IsTrue(expr).",
+          "defaultLevel": "note",
+          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2003.md",
           "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "SonarWay"
-            ]
+            "category": "Assertion",
+            "isEnabledByDefault": true
+          }
+        },
+        "NUnit2005": {
+          "id": "NUnit2005",
+          "shortDescription": "Consider using Assert.That(actual, Is.EqualTo(expected)) instead of Assert.AreEqual(expected, actual)",
+          "fullDescription": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual).",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2005.md",
+          "properties": {
+            "category": "Assertion",
+            "isEnabledByDefault": true
+          }
+        },
+        "NUnit2017": {
+          "id": "NUnit2017",
+          "shortDescription": "Consider using Assert.That(expr, Is.Null) instead of Assert.IsNull(expr)",
+          "fullDescription": "Consider using the constraint model, Assert.That(expr, Is.Null), instead of the classic model, Assert.IsNull(expr).",
+          "defaultLevel": "note",
+          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2017.md",
+          "properties": {
+            "category": "Assertion",
+            "isEnabledByDefault": true
+          }
+        },
+        "NUnit2019": {
+          "id": "NUnit2019",
+          "shortDescription": "Consider using Assert.That(expr, Is.Not.Null) instead of Assert.IsNotNull(expr)",
+          "fullDescription": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr).",
+          "defaultLevel": "note",
+          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2019.md",
+          "properties": {
+            "category": "Assertion",
+            "isEnabledByDefault": true
           }
         }
       }

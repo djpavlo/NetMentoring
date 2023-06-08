@@ -265,7 +265,7 @@ _queueName,,8 B
 )?? 
 ;?? 
 }@@ 
-}AA Ä
+}AA ý
 G/Users/pavel/project/NetMentoring/EventBusRabbitMQ/IEventBusRabbitMq.cs
 	namespace 	
 EventBusRabbitMQ
@@ -273,7 +273,9 @@ G/Users/pavel/project/NetMentoring/EventBusRabbitMQ/IEventBusRabbitMq.cs
 ; 
 public 
 	interface 
-IEventBusRabbitMq "
+IEventBusRabbitMq "
+:" #
+IDisposable$ /
 { 
 event 	
 EventHandler
@@ -295,20 +297,23 @@ G/Users/pavel/project/NetMentoring/EventBusRabbitMQ/IEventBusRabbitMq.cs
 string		 
 message		 
 )		  
-;		  !
+;		  !
+new
+
+ 
 void
 
- 
+ 
 Dispose
 
-	 
+ 
 (
 
- 
+ 
 )
 
- 
+ 
 ;
 
- 
+ 
 } 

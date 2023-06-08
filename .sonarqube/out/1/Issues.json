@@ -21,15 +21,64 @@
                 "uri": "file:///Users/pavel/project/NetMentoring/EventBusRabbitMQ/IEventBusRabbitMq.cs",
                 "region": {
                   "startLine": 10,
-                  "startColumn": 10,
+                  "startColumn": 14,
                   "endLine": 10,
-                  "endColumn": 17
+                  "endColumn": 21
                 }
               }
             }
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3881",
+          "level": "warning",
+          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 14,
+                  "endLine": 7,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 14,
+                  "endLine": 7,
+                  "endColumn": 30
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 17,
+                  "endLine": 60,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'EventBusRabbitMq' or mark the type as 'sealed'.",
+              "1": "'EventBusRabbitMq.Dispose()' should call 'Dispose(true)' and 'GC.SuppressFinalize(this)'."
+            }
           }
         },
         {
@@ -52,9 +101,46 @@
           "properties": {
             "warningLevel": 1
           }
+        },
+        {
+          "ruleId": "CA1816",
+          "level": "note",
+          "message": "Change EventBusRabbitMq.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 17,
+                  "endLine": 60,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
         }
       ],
       "rules": {
+        "CA1816": {
+          "id": "CA1816",
+          "shortDescription": "Dispose methods should call SuppressFinalize",
+          "fullDescription": "A method that is an implementation of Dispose does not call GC.SuppressFinalize; or a method that is not an implementation of Dispose calls GC.SuppressFinalize; or a method calls GC.SuppressFinalize and passes something other than this (Me in Visual Basic).",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1816",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
         "S1450": {
           "id": "S1450",
           "shortDescription": "Private fields only used as local variables in methods should become local variables",
@@ -83,6 +169,23 @@
             "tags": [
               "C#",
               "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3881": {
+          "id": "S3881",
+          "shortDescription": "\"IDisposable\" should be implemented correctly",
+          "fullDescription": "The IDisposable interface is a mechanism to release unmanaged resources, if not implemented correctly this could result in resource leaks or more severe bugs.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3881",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
               "SonarWay"
             ]
           }

@@ -45,6 +45,7 @@ public class CartController : ControllerBase
         var cart = _cartService.GetCartItems(cartKey);
         if (cart == null)
         {
+            _logger.LogInformation($"Cart with key {cartKey} not found");
             return NotFound();
         }
         return Ok(cart.Items);

@@ -1,8 +1,9 @@
-{
-p/Users/pavel/.nuget/packages/microsoft.net.test.sdk/17.6.0/build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.csutf-8Å
-v/Users/pavel/project/NetMentoring/CartingService.UnitTests/obj/Debug/net7.0/CartingService.UnitTests.GlobalUsings.g.csutf-8Ö
-z/Users/pavel/project/NetMentoring/CartingService.UnitTests/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8
-t/Users/pavel/project/NetMentoring/CartingService.UnitTests/obj/Debug/net7.0/CartingService.UnitTests.AssemblyInfo.csutf-8_
-V/Users/pavel/project/NetMentoring/CartingService.UnitTests/CartRepository.UnitTests.csutf-8\
-S/Users/pavel/project/NetMentoring/CartingService.UnitTests/CartService.UnitTests.csutf-8M
-D/Users/pavel/project/NetMentoring/CartingService.UnitTests/Usings.csutf-8
+Q
+H/Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/Usings.csutf-8a
+X/Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V1/CartControllerTests.csutf-8a
+X/Users/pavel/project/NetMentoring/CartWebApi.Tests/Controllers/V2/CartControllerTests.csutf-8q
+f/Users/pavel/project/NetMentoring/CartWebApi.Tests/obj/Debug/net7.0/CartWebApi.Tests.GlobalUsings.g.csutf-8{
+p/Users/pavel/.nuget/packages/microsoft.net.test.sdk/17.6.2/build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.csutf-8E
+</Users/pavel/project/NetMentoring/CartWebApi.Tests/Usings.csutf-8}
+r/Users/pavel/project/NetMentoring/CartWebApi.Tests/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8o
+d/Users/pavel/project/NetMentoring/CartWebApi.Tests/obj/Debug/net7.0/CartWebApi.Tests.AssemblyInfo.csutf-8

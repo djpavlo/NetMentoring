@@ -641,10 +641,10 @@ U/Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/AccessDenied.csh
 ( 
 ) 
 { 
-}		 
-}
+}
 
- ʃ
+ 
+} ʃ
 T/Users/pavel/project/NetMentoring/IdentityServer/Pages/Account/Login/Index.cshtml.cs
 	namespace 	
 IdentityServer

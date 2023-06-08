@@ -10,6 +10,6 @@ E/Users/pavel/project/NetMentoring/CartingService/DAL/Models/DbCart.csutf-8R
 I/Users/pavel/project/NetMentoring/CartingService/DAL/Models/DbCartItem.csutf-8W
 N/Users/pavel/project/NetMentoring/CartingService/DAL/Models/DbCartItemImage.csutf-8D
 ;/Users/pavel/project/NetMentoring/CartingService/Program.csutf-8m
-b/Users/pavel/project/NetMentoring/CartingService/obj/Debug/net7.0/CartingService.GlobalUsings.g.csutf-8{
-p/Users/pavel/project/NetMentoring/CartingService/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8k
-`/Users/pavel/project/NetMentoring/CartingService/obj/Debug/net7.0/CartingService.AssemblyInfo.csutf-8
+b/Users/pavel/project/NetMentoring/CartingService/obj/Debug/net7.0/CartingService.GlobalUsings.g.csutf-8k
+`/Users/pavel/project/NetMentoring/CartingService/obj/Debug/net7.0/CartingService.AssemblyInfo.csutf-8{
+p/Users/pavel/project/NetMentoring/CartingService/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8

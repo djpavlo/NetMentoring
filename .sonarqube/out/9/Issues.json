@@ -12,18 +12,34 @@
       },
       "results": [
         {
-          "ruleId": "CS8602",
+          "ruleId": "CS8618",
           "level": "warning",
-          "message": "Dereference of a possibly null reference.",
+          "message": "Non-nullable field '_context' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/AuthHelper/HasScopeHandler.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
                 "region": {
-                  "startLine": 23,
-                  "startColumn": 22,
-                  "endLine": 23,
-                  "endColumn": 102
+                  "startLine": 9,
+                  "startColumn": 28,
+                  "endLine": 9,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 28,
+                  "endLine": 9,
+                  "endColumn": 36
                 }
               }
             }
@@ -33,16 +49,918 @@
           }
         },
         {
-          "ruleId": "CS8602",
+          "ruleId": "CS8618",
           "level": "warning",
-          "message": "Dereference of a possibly null reference.",
+          "message": "Non-nullable field '_repository' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Service/CustomInitializationService.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 33,
+                  "endLine": 10,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 33,
+                  "endLine": 10,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field '_options' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 46,
+                  "endLine": 11,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 46,
+                  "endLine": 11,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 5,
+                  "endLine": 80,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2017",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Null), instead of the classic model, Assert.IsNull(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 5,
+                  "endLine": 92,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 5,
+                  "endLine": 61,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 5,
+                  "endLine": 62,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2019",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 5,
+                  "endLine": 76,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNotNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 5,
+                  "endLine": 77,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 5,
+                  "endLine": 78,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 5,
+                  "endLine": 79,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 5,
+                  "endLine": 80,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 5,
+                  "endLine": 81,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 5,
+                  "endLine": 82,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 5,
+                  "endLine": 121,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2017",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Null), instead of the classic model, Assert.IsNull(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 5,
+                  "endLine": 156,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 5,
+                  "endLine": 101,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2019",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 5,
+                  "endLine": 106,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNotNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 5,
+                  "endLine": 107,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 5,
+                  "endLine": 108,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 5,
+                  "endLine": 109,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 5,
+                  "endLine": 110,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 5,
+                  "endLine": 111,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 5,
+                  "endLine": 112,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2019",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 5,
+                  "endLine": 133,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNotNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 5,
+                  "endLine": 134,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 5,
+                  "endLine": 135,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 5,
+                  "endLine": 136,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 5,
+                  "endLine": 137,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 138,
+                  "startColumn": 5,
+                  "endLine": 138,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 139,
+                  "startColumn": 5,
+                  "endLine": 139,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1829",
+          "level": "note",
+          "message": "Use the \"Count\" property instead of Enumerable.Count()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 39,
+                  "endLine": 31,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "PropertyNameKey": "Count"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1829",
+          "level": "note",
+          "message": "Use the \"Count\" property instead of Enumerable.Count()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 36,
+                  "endLine": 50,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "PropertyNameKey": "Count"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 5,
+                  "endLine": 31,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 7,
+                  "endLine": 34,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/CategoryRepositoryTests.cs",
                 "region": {
                   "startLine": 35,
-                  "startColumn": 11,
+                  "startColumn": 7,
                   "endLine": 35,
                   "endColumn": 58
                 }
@@ -50,77 +968,27 @@
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
           }
         },
         {
-          "ruleId": "S2068",
+          "ruleId": "NUnit2005",
           "level": "warning",
-          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/appsettings.json",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 24,
-                  "endLine": 13,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3267",
-          "level": "warning",
-          "message": "Loops should be simplified with \"LINQ\" expressions",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/SwaggerDefaultValues.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 35,
-                  "endLine": 29,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/SwaggerDefaultValues.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 13,
-                  "endLine": 31,
-                  "endColumn": 81
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2016",
-          "level": "note",
-          "message": "Forward the 'cancellationToken' parameter to the 'AddRangeAsync' method or pass in 'CancellationToken.None' explicitly to indicate intentionally not propagating the token",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Service/CustomInitializationService.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 21,
-                  "endLine": 35,
-                  "endColumn": 46
+                  "startLine": 50,
+                  "startColumn": 7,
+                  "endLine": 50,
+                  "endColumn": 51
                 }
               }
             }
@@ -128,125 +996,25 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "ArgumentName": "cancellationToken",
-              "ParameterName": null,
-              "ShouldFix": "1"
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
             }
           }
         },
         {
-          "ruleId": "S3267",
+          "ruleId": "NUnit2005",
           "level": "warning",
-          "message": "Loop should be simplified by calling Select(description => description.GroupName))",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/SwaggerConfig.cs",
-                "region": {
-                  "startLine": 102,
-                  "startColumn": 37,
-                  "endLine": 102,
-                  "endColumn": 49
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3776",
-          "level": "warning",
-          "message": "Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 30,
-                  "endLine": 35,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
-                "region": {
-                  "startLine": 46,
-                  "startColumn": 5,
-                  "endLine": 46,
-                  "endColumn": 7
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
-                "region": {
-                  "startLine": 51,
-                  "startColumn": 5,
-                  "endLine": 51,
-                  "endColumn": 7
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
                 "region": {
                   "startLine": 53,
-                  "startColumn": 7,
-                  "endLine": 53,
-                  "endColumn": 9
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
-                "region": {
-                  "startLine": 60,
-                  "startColumn": 7,
-                  "endLine": 60,
-                  "endColumn": 9
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
-                "region": {
-                  "startLine": 64,
                   "startColumn": 9,
-                  "endLine": 64,
-                  "endColumn": 12
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
-                "region": {
-                  "startLine": 68,
-                  "startColumn": 11,
-                  "endLine": 68,
-                  "endColumn": 13
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
-                "region": {
-                  "startLine": 72,
-                  "startColumn": 13,
-                  "endLine": 72,
-                  "endColumn": 15
+                  "endLine": 53,
+                  "endColumn": 51
                 }
               }
             }
@@ -254,47 +1022,152 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "0": "+1",
-              "1": "+1",
-              "2": "+2 (incl 1 for nesting)",
-              "3": "+2 (incl 1 for nesting)",
-              "4": "+3 (incl 2 for nesting)",
-              "5": "+4 (incl 3 for nesting)",
-              "6": "+5 (incl 4 for nesting)"
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
             }
           }
         },
         {
-          "ruleId": "S1075",
+          "ruleId": "NUnit2005",
           "level": "warning",
-          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi/Configurators/ConfigureSwaggerOptions.cs",
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
                 "region": {
-                  "startLine": 43,
-                  "startColumn": 68,
-                  "endLine": 43,
-                  "endColumn": 105
+                  "startLine": 54,
+                  "startColumn": 9,
+                  "endLine": 54,
+                  "endColumn": 55
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 9,
+                  "endLine": 55,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 9,
+                  "endLine": 56,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 9,
+                  "endLine": 57,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogService.Infrastructure.Tests/ProducItemRepositoryTests.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 9,
+                  "endLine": 58,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
           }
         }
       ],
       "rules": {
-        "CA2016": {
-          "id": "CA2016",
-          "shortDescription": "Forward the 'CancellationToken' parameter to methods",
-          "fullDescription": "Forward the 'CancellationToken' parameter to methods to ensure the operation cancellation notifications gets properly propagated, or pass in 'CancellationToken.None' explicitly to indicate intentionally not propagating the token.",
+        "CA1829": {
+          "id": "CA1829",
+          "shortDescription": "Use Length/Count property instead of Count() when available",
+          "fullDescription": "Enumerable.Count() potentially enumerates the sequence while a Length/Count property is a direct access.",
           "defaultLevel": "note",
-          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2016",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1829",
           "properties": {
-            "category": "Reliability",
+            "category": "Performance",
             "isEnabledByDefault": true,
             "tags": [
               "Telemetry",
@@ -302,11 +1175,11 @@
             ]
           }
         },
-        "CS8602": {
-          "id": "CS8602",
-          "shortDescription": "Dereference of a possibly null reference.",
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
           "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,
@@ -316,69 +1189,37 @@
             ]
           }
         },
-        "S1075": {
-          "id": "S1075",
-          "shortDescription": "URIs should not be hardcoded",
-          "fullDescription": "Hardcoding a URI makes it difficult to test a program: path literals are not always portable across operating systems, a given absolute path may not exist on a specific test environment, a specified Internet URL may not be available when executing the tests, production environment filesystems usually differ from the development environment, …​etc. For all those reasons, a URI should never be hardcoded. Instead, it should be replaced by customizable parameter.",
+        "NUnit2005": {
+          "id": "NUnit2005",
+          "shortDescription": "Consider using Assert.That(actual, Is.EqualTo(expected)) instead of Assert.AreEqual(expected, actual)",
+          "fullDescription": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual).",
           "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1075",
+          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2005.md",
           "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "SonarWay"
-            ]
+            "category": "Assertion",
+            "isEnabledByDefault": true
           }
         },
-        "S2068": {
-          "id": "S2068",
-          "shortDescription": "Hard-coded credentials are security-sensitive",
-          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+        "NUnit2017": {
+          "id": "NUnit2017",
+          "shortDescription": "Consider using Assert.That(expr, Is.Null) instead of Assert.IsNull(expr)",
+          "fullDescription": "Consider using the constraint model, Assert.That(expr, Is.Null), instead of the classic model, Assert.IsNull(expr).",
+          "defaultLevel": "note",
+          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2017.md",
           "properties": {
-            "category": "Blocker Security Hotspot",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "SonarWay"
-            ]
+            "category": "Assertion",
+            "isEnabledByDefault": true
           }
         },
-        "S3267": {
-          "id": "S3267",
-          "shortDescription": "Loops should be simplified with \"LINQ\" expressions",
-          "fullDescription": "When a loop is filtering, selecting or aggregating, those functions can be handled with a clearer, more concise LINQ expression instead.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3267",
+        "NUnit2019": {
+          "id": "NUnit2019",
+          "shortDescription": "Consider using Assert.That(expr, Is.Not.Null) instead of Assert.IsNotNull(expr)",
+          "fullDescription": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr).",
+          "defaultLevel": "note",
+          "helpUri": "https://github.com/nunit/nunit.analyzers/tree/master/documentation/NUnit2019.md",
           "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
-        "S3776": {
-          "id": "S3776",
-          "shortDescription": "Cognitive Complexity of methods should not be too high",
-          "fullDescription": "Cognitive Complexity is a measure of how hard the control flow of a method is to understand. Methods with high Cognitive Complexity will be difficult to maintain.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3776",
-          "properties": {
-            "category": "Critical Code Smell",
-            "isEnabledByDefault": false,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
+            "category": "Assertion",
+            "isEnabledByDefault": true
           }
         }
       }

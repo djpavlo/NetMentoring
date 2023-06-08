@@ -1056,58 +1056,6 @@
               "resultFile": {
                 "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
                 "region": {
-                  "startLine": 235,
-                  "startColumn": 5,
-                  "endLine": 235,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "HasToleranceValue": "False",
-              "IsGenericMethod": "False",
-              "ModelName": "IsNotNull"
-            }
-          }
-        },
-        {
-          "ruleId": "NUnit2005",
-          "level": "warning",
-          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
-                "region": {
-                  "startLine": 236,
-                  "startColumn": 5,
-                  "endLine": 236,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "HasToleranceValue": "False",
-              "IsGenericMethod": "False",
-              "ModelName": "AreEqual"
-            }
-          }
-        },
-        {
-          "ruleId": "NUnit2019",
-          "level": "note",
-          "message": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
-                "region": {
                   "startLine": 201,
                   "startColumn": 5,
                   "endLine": 201,
@@ -1398,6 +1346,58 @@
                   "startColumn": 7,
                   "endLine": 219,
                   "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2019",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
+                "region": {
+                  "startLine": 235,
+                  "startColumn": 5,
+                  "endLine": 235,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNotNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
+                "region": {
+                  "startLine": 236,
+                  "startColumn": 5,
+                  "endLine": 236,
+                  "endColumn": 53
                 }
               }
             }
@@ -1758,58 +1758,6 @@
               "resultFile": {
                 "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
                 "region": {
-                  "startLine": 320,
-                  "startColumn": 5,
-                  "endLine": 320,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "HasToleranceValue": "False",
-              "IsGenericMethod": "False",
-              "ModelName": "IsNotNull"
-            }
-          }
-        },
-        {
-          "ruleId": "NUnit2005",
-          "level": "warning",
-          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
-                "region": {
-                  "startLine": 321,
-                  "startColumn": 5,
-                  "endLine": 321,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "HasToleranceValue": "False",
-              "IsGenericMethod": "False",
-              "ModelName": "AreEqual"
-            }
-          }
-        },
-        {
-          "ruleId": "NUnit2019",
-          "level": "note",
-          "message": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
-                "region": {
                   "startLine": 307,
                   "startColumn": 5,
                   "endLine": 307,
@@ -1888,9 +1836,9 @@
               "resultFile": {
                 "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
                 "region": {
-                  "startLine": 350,
+                  "startLine": 320,
                   "startColumn": 5,
-                  "endLine": 350,
+                  "endLine": 320,
                   "endColumn": 39
                 }
               }
@@ -1914,9 +1862,9 @@
               "resultFile": {
                 "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
                 "region": {
-                  "startLine": 351,
+                  "startLine": 321,
                   "startColumn": 5,
-                  "endLine": 351,
+                  "endLine": 321,
                   "endColumn": 55
                 }
               }
@@ -1996,6 +1944,58 @@
                   "startColumn": 5,
                   "endLine": 339,
                   "endColumn": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "AreEqual"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2019",
+          "level": "note",
+          "message": "Consider using the constraint model, Assert.That(expr, Is.Not.Null), instead of the classic model, Assert.IsNotNull(expr)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
+                "region": {
+                  "startLine": 350,
+                  "startColumn": 5,
+                  "endLine": 350,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HasToleranceValue": "False",
+              "IsGenericMethod": "False",
+              "ModelName": "IsNotNull"
+            }
+          }
+        },
+        {
+          "ruleId": "NUnit2005",
+          "level": "warning",
+          "message": "Consider using the constraint model, Assert.That(actual, Is.EqualTo(expected)), instead of the classic model, Assert.AreEqual(expected, actual)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/pavel/project/NetMentoring/CatalogWebApi.Tests/Controllers/V1/CatalogControllerTests.cs",
+                "region": {
+                  "startLine": 351,
+                  "startColumn": 5,
+                  "endLine": 351,
+                  "endColumn": 55
                 }
               }
             }

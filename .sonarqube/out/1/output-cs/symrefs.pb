@@ -1,4 +1,19 @@
-Æ
+‘
+G/Users/pavel/project/NetMentoring/EventBusRabbitMQ/IEventBusRabbitMq.cs
+
+ "
+
+/ @
+
+	 
+
+			 
+
+		 
+
+
+
+ Æ
 F/Users/pavel/project/NetMentoring/EventBusRabbitMQ/EventBusRabbitMQ.cs
 
  2
@@ -26,19 +41,4 @@ F/Users/pavel/project/NetMentoring/EventBusRabbitMQ/EventBusRabbitMQ.cs
 44. 4
 44L N66( *
 
-<< ‘
-G/Users/pavel/project/NetMentoring/EventBusRabbitMQ/IEventBusRabbitMq.cs
-
- "
-
-/ @
-
-	 
-
-			 
-
-		 
-
-
-
-	 
+<< 
