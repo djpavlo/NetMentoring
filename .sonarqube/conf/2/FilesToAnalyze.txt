@@ -1,0 +1,4 @@
+﻿/Users/pavel/project/NetMentoring/ApiGatewayOcelot/Aggregators/CatalogDetailsAggregatorMiddleware.cs
+/Users/pavel/project/NetMentoring/ApiGatewayOcelot/Program.cs
+/Users/pavel/project/NetMentoring/ApiGatewayOcelot/ocelot.json
+/Users/pavel/project/NetMentoring/ApiGatewayOcelot/swagger.json

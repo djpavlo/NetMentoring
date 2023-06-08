@@ -1,0 +1,6 @@
+projectKey=mentoring
+serverUrl=http://pavlodocker:9300
+serverVersion=10.0.0.68432
+dashboardUrl=http://pavlodocker:9300/dashboard?id=mentoring
+ceTaskId=AYiX7wxm8C3Rn6wJV5Bw
+ceTaskUrl=http://pavlodocker:9300/api/ce/task?id=AYiX7wxm8C3Rn6wJV5Bw
